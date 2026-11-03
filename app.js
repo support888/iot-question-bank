@@ -7,6 +7,7 @@ const typeLabels = {
   judge: "判断题",
   short: "简答题",
   analysis: "分析题",
+  discussion: "论述题",
 };
 
 const state = {
@@ -321,7 +322,7 @@ function getAttemptMarkup(question) {
   const answer = getAnswer(question.id);
   if (!answer) return "";
 
-  if (question.type === "short" || question.type === "analysis") {
+  if (["short", "analysis", "discussion"].includes(question.type)) {
     if (typeof answer.correct !== "boolean") return "";
     return `
       <div class="feedback ${answer.correct ? "is-correct" : "is-wrong"}">
@@ -811,7 +812,7 @@ async function initialize() {
   elements.list.innerHTML = `
     <div class="empty-state">
       <h3>正在载入题库…</h3>
-      <p>正在整理三套章节测验。</p>
+      <p>正在整理综合题库。</p>
     </div>`;
 
   try {

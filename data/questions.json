@@ -1,15 +1,16 @@
 {
   "meta": {
     "title": "物联网题库",
-    "description": "物联网通信技术章节测验 2、3、4 合并复习题库",
-    "generatedAt": "2026-11-03T02:44:45.499Z",
-    "questionCount": 185,
-    "sourceCount": 3,
+    "description": "物联网通信技术章节测验 2、3、4 与综合测验合并去重题库",
+    "generatedAt": "2026-11-03T03:44:05.485Z",
+    "questionCount": 275,
+    "sourceCount": 4,
     "typeCounts": {
-      "single": 85,
-      "judge": 83,
-      "short": 10,
-      "analysis": 7
+      "single": 122,
+      "judge": 121,
+      "short": 17,
+      "analysis": 12,
+      "discussion": 3
     },
     "sources": [
       {
@@ -32,6 +33,13 @@
         "shortLabel": "测验 4",
         "course": "物联网通信技术",
         "questionCount": 60
+      },
+      {
+        "code": "exam",
+        "label": "综合测验",
+        "shortLabel": "综合",
+        "course": "物联网通信技术",
+        "questionCount": 90
       }
     ]
   },
@@ -46,7 +54,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "信源编码主要追求什么？",
       "options": [
         {
@@ -70,7 +78,7 @@
       "explanation": "信源编码用于压缩信息、减少冗余，从而提高传输有效性。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 28 题；章节测验-2 第 1 题（重复题，已合并）",
       "order": 1
     },
     {
@@ -83,7 +91,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "定长编码的典型特征是什么？",
       "options": [
         {
@@ -107,7 +115,7 @@
       "explanation": "定长编码的所有码字长度一致。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 29 题；章节测验-2 第 2 题（重复题，已合并）",
       "order": 2
     },
     {
@@ -120,7 +128,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "为减少平均码长，高概率符号通常应分配什么？",
       "options": [
         {
@@ -144,7 +152,7 @@
       "explanation": "高概率符号出现频繁，分配短码字可以降低平均码长。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 30 题；章节测验-2 第 3 题（重复题，已合并）",
       "order": 3
     },
     {
@@ -157,7 +165,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "前缀码的定义是什么？",
       "options": [
         {
@@ -166,7 +174,7 @@
         },
         {
           "key": "B",
-          "text": "每个码字只能为 1 位"
+          "text": "每个码字只能为1位"
         },
         {
           "key": "C",
@@ -181,7 +189,7 @@
       "explanation": "前缀码保证一个码字不会被误认为另一个更长码字的前缀。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 31 题；章节测验-2 第 4 题（重复题，已合并）",
       "order": 4
     },
     {
@@ -194,7 +202,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "构造二元霍夫曼树时，首先合并哪两个概率？",
       "options": [
         {
@@ -218,7 +226,7 @@
       "explanation": "霍夫曼算法每轮合并当前概率最小的两个节点。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 32 题；章节测验-2 第 5 题（重复题，已合并）",
       "order": 5
     },
     {
@@ -231,31 +239,31 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "理想低通信号最高频率为 3 kHz，理论最低采样频率是多少？",
+      "points": 1,
+      "title": "理想低通信号最高频率为3kHz，理论最低采样频率是多少？",
       "options": [
         {
           "key": "A",
-          "text": "1 kHz"
+          "text": "1kHz"
         },
         {
           "key": "B",
-          "text": "6 kHz"
+          "text": "6kHz"
         },
         {
           "key": "C",
-          "text": "3 kHz"
+          "text": "3kHz"
         },
         {
           "key": "D",
-          "text": "1.5 kHz"
+          "text": "1.5kHz"
         }
       ],
       "answer": "B",
-      "explanation": "根据奈奎斯特采样定理，采样频率至少为最高频率的 2 倍：\\(2\\times3=6\\) kHz。",
+      "explanation": "根据奈奎斯特采样定理，采样频率至少为最高频率的 2 倍：2\\times3=6 kHz。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 33 题；章节测验-2 第 6 题（重复题，已合并）",
       "order": 6
     },
     {
@@ -268,8 +276,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "PCM 处理模拟信号的基本顺序是哪项？",
+      "points": 1,
+      "title": "PCM处理模拟信号的基本顺序是哪项？",
       "options": [
         {
           "key": "A",
@@ -292,7 +300,7 @@
       "explanation": "PCM 的基本过程是采样、量化、编码。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 34 题；章节测验-2 第 7 题（重复题，已合并）",
       "order": 7
     },
     {
@@ -305,8 +313,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "8 位二进制编码最多表示多少个量化级？",
+      "points": 1,
+      "title": "8位二进制编码最多表示多少个量化级？",
       "options": [
         {
           "key": "A",
@@ -326,10 +334,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "8 位二进制可以表示 \\(2^8=256\\) 个不同状态。",
+      "explanation": "8 位二进制可以表示 2^8=256 个不同状态。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 35 题；章节测验-2 第 8 题（重复题，已合并）",
       "order": 8
     },
     {
@@ -342,7 +350,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "量化误差主要来自哪一步？",
       "options": [
         {
@@ -366,7 +374,7 @@
       "explanation": "量化将连续或高精度样值映射到有限离散值，因而产生误差。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 36 题；章节测验-2 第 9 题（重复题，已合并）",
       "order": 9
     },
     {
@@ -379,8 +387,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "用载波有无分别表示 1 和 0 的二进制调制叫什么？",
+      "points": 1,
+      "title": "用载波有无分别表示1和0的二进制调制叫什么？",
       "options": [
         {
           "key": "A",
@@ -403,7 +411,7 @@
       "explanation": "OOK 即通断键控，用载波的有无表示二进制符号。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 37 题；章节测验-2 第 10 题（重复题，已合并）",
       "order": 10
     },
     {
@@ -416,8 +424,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "2FSK 通过什么表示两个二进制符号？",
+      "points": 1,
+      "title": "2FSK通过什么表示两个二进制符号？",
       "options": [
         {
           "key": "A",
@@ -440,7 +448,7 @@
       "explanation": "2FSK 通过切换两个不同载波频率来表示 0 和 1。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 38 题；章节测验-2 第 11 题（重复题，已合并）",
       "order": 11
     },
     {
@@ -453,31 +461,31 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "BPSK 一般使用哪种相位差区分两个符号？",
+      "points": 1,
+      "title": "BPSK一般使用哪种相位差区分两个符号？",
       "options": [
         {
           "key": "A",
-          "text": "\\(\\pi/4\\)"
+          "text": "π/4"
         },
         {
           "key": "B",
-          "text": "\\(\\pi/8\\)"
+          "text": "π/8"
         },
         {
           "key": "C",
-          "text": "\\(0\\)"
+          "text": "0"
         },
         {
           "key": "D",
-          "text": "\\(\\pi\\)"
+          "text": "π"
         }
       ],
       "answer": "D",
-      "explanation": "BPSK 两个符号的载波相位通常相差 \\(180^\\circ\\)，即 \\(\\pi\\)。",
+      "explanation": "BPSK 两个符号的载波相位通常相差 180^\\circ，即 \\pi。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 39 题；章节测验-2 第 12 题（重复题，已合并）",
       "order": 12
     },
     {
@@ -490,8 +498,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "DPSK 以什么量表示信息？",
+      "points": 1,
+      "title": "DPSK以什么量表示信息？",
       "options": [
         {
           "key": "A",
@@ -514,7 +522,7 @@
       "explanation": "DPSK 使用前后符号的相对相位关系携带信息。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 40 题；章节测验-2 第 13 题（重复题，已合并）",
       "order": 13
     },
     {
@@ -527,8 +535,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "每秒传输 2000 个码元，其码元速率为多少？",
+      "points": 1,
+      "title": "每秒传输2000个码元，其码元速率为多少？",
       "options": [
         {
           "key": "A",
@@ -540,18 +548,18 @@
         },
         {
           "key": "C",
-          "text": "2000 Hz 带宽"
+          "text": "2000 Hz带宽"
         },
         {
           "key": "D",
-          "text": "4000 字节/s"
+          "text": "4000字节/s"
         }
       ],
       "answer": "B",
       "explanation": "码元速率的单位为 Baud，每秒 2000 个码元即 2000 Baud。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 41 题；章节测验-2 第 14 题（重复题，已合并）",
       "order": 14
     },
     {
@@ -564,8 +572,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "数据率为 12 kbit/s、带宽为 4 kHz 时，频带利用率是多少？",
+      "points": 1,
+      "title": "数据率为12kbit/s、带宽为4kHz时，频带利用率是多少？",
       "options": [
         {
           "key": "A",
@@ -585,10 +593,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "频带利用率为 \\(12/4=3\\) bit/s/Hz。",
+      "explanation": "频带利用率为 12/4=3 bit/s/Hz。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 42 题；章节测验-2 第 15 题（重复题，已合并）",
       "order": 15
     },
     {
@@ -601,7 +609,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "相干解调直接依赖哪类同步？",
       "options": [
         {
@@ -625,7 +633,7 @@
       "explanation": "相干解调需要在接收端恢复同频、同相的载波。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 43 题；章节测验-2 第 16 题（重复题，已合并）",
       "order": 16
     },
     {
@@ -638,7 +646,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "用于确定最佳码元取样时刻的是哪类同步？",
       "options": [
         {
@@ -662,7 +670,7 @@
       "explanation": "位同步用于确定码元边界和最佳取样时刻。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 44 题；章节测验-2 第 17 题（重复题，已合并）",
       "order": 17
     },
     {
@@ -675,7 +683,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "路径损耗主要描述什么？",
       "options": [
         {
@@ -699,7 +707,7 @@
       "explanation": "路径损耗描述无线信号功率在传播过程中的距离衰减。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 54 题；章节测验-2 第 18 题（重复题，已合并）",
       "order": 18
     },
     {
@@ -712,7 +720,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "建筑物和树木遮挡造成的慢变信号强度波动通常称为什么？",
       "options": [
         {
@@ -736,7 +744,7 @@
       "explanation": "障碍物遮挡引起的大尺度、慢变衰落称为阴影衰落。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 55 题；章节测验-2 第 19 题（重复题，已合并）",
       "order": 19
     },
     {
@@ -749,7 +757,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "无线链路多普勒频移主要与什么有关？",
       "options": [
         {
@@ -773,7 +781,7 @@
       "explanation": "多普勒频移与载频、相对运动速度及运动方向有关。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 56 题；章节测验-2 第 20 题（重复题，已合并）",
       "order": 20
     },
     {
@@ -786,7 +794,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "缺少显著直达路径且有大量散射路径时，常用哪种包络模型？",
       "options": [
         {
@@ -810,7 +818,7 @@
       "explanation": "没有明显直达分量、只有多径散射时，包络通常服从瑞利分布。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 57 题；章节测验-2 第 21 题（重复题，已合并）",
       "order": 21
     },
     {
@@ -823,7 +831,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "分集有效获得抗衰落增益的重要条件是什么？",
       "options": [
         {
@@ -847,7 +855,7 @@
       "explanation": "分集要求各支路传输相同信息，且各支路的衰落尽量独立或低相关。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 58 题；章节测验-2 第 22 题（重复题，已合并）",
       "order": 22
     },
     {
@@ -860,7 +868,7 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
+      "points": 1,
       "title": "接收端仅选取质量最佳支路输出，属于什么？",
       "options": [
         {
@@ -884,7 +892,7 @@
       "explanation": "只选择信噪比最高的支路输出，称为选择合并。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 59 题；章节测验-2 第 23 题（重复题，已合并）",
       "order": 23
     },
     {
@@ -897,8 +905,8 @@
       "sourceQuestionId": "",
       "type": "single",
       "typeLabel": "单选题",
-      "points": 0,
-      "title": "OFDM 将高速数据流如何处理？",
+      "points": 1,
+      "title": "OFDM将高速数据流如何处理？",
       "options": [
         {
           "key": "A",
@@ -921,7 +929,7 @@
       "explanation": "OFDM 把高速串行数据分解为多个低速子流，并调制到正交子载波上并行传输。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 60 题；章节测验-2 第 24 题（重复题，已合并）",
       "order": 24
     },
     {
@@ -934,7 +942,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "无失真信源编码要求能恢复原始符号序列。",
       "options": [
         {
@@ -950,7 +958,7 @@
       "explanation": "无失真编码必须保证译码后能够完整恢复原始符号序列。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 149 题；章节测验-2 第 25 题（重复题，已合并）",
       "order": 25
     },
     {
@@ -963,7 +971,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "任何变长码都必然比任意定长码效率高。",
       "options": [
         {
@@ -979,7 +987,7 @@
       "explanation": "编码效率取决于符号概率分布及码字设计，不能一概而论。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 150 题；章节测验-2 第 26 题（重复题，已合并）",
       "order": 26
     },
     {
@@ -992,7 +1000,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "前缀码可以在读到完整码字后立即识别该符号。",
       "options": [
         {
@@ -1008,7 +1016,7 @@
       "explanation": "前缀码具有即时可译性，不需要等待后续码字。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 151 题；章节测验-2 第 27 题（重复题，已合并）",
       "order": 27
     },
     {
@@ -1021,7 +1029,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "二元霍夫曼编码应反复合并当前概率最大的两个节点。",
       "options": [
         {
@@ -1037,7 +1045,7 @@
       "explanation": "霍夫曼编码每轮应合并概率最小的两个节点。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 152 题；章节测验-2 第 28 题（重复题，已合并）",
       "order": 28
     },
     {
@@ -1050,7 +1058,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "理想带限低通信号采样频率低于两倍最高频率时，可能发生混叠。",
       "options": [
         {
@@ -1066,7 +1074,7 @@
       "explanation": "不满足奈奎斯特采样条件时，频谱可能重叠，导致混叠。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 153 题；章节测验-2 第 29 题（重复题，已合并）",
       "order": 29
     },
     {
@@ -1079,7 +1087,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "均匀量化中，各量化区间的间隔相同。",
       "options": [
         {
@@ -1095,7 +1103,7 @@
       "explanation": "均匀量化的量化步长固定，各量化区间等间隔。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 154 题；章节测验-2 第 30 题（重复题，已合并）",
       "order": 30
     },
     {
@@ -1108,8 +1116,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "量化级数为 64 时，二进制编码至少需要 8 位。",
+      "points": 1,
+      "title": "量化级数为64时，二进制编码至少需要8位。",
       "options": [
         {
           "key": "对",
@@ -1121,10 +1129,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "64 个量化级只需 \\(\\log_2 64=6\\) 位。",
+      "explanation": "64 个量化级只需 \\log_2 64=6 位。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 155 题；章节测验-2 第 31 题（重复题，已合并）",
       "order": 31
     },
     {
@@ -1137,7 +1145,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "压扩量化有助于改善语音小信号的量化信噪比。",
       "options": [
         {
@@ -1153,7 +1161,7 @@
       "explanation": "压扩量化让小信号使用更细的量化间隔，从而改善小信号信噪比。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 156 题；章节测验-2 第 32 题（重复题，已合并）",
       "order": 32
     },
     {
@@ -1166,8 +1174,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "DPCM 完全不利用信号样值之间的相关性。",
+      "points": 1,
+      "title": "DPCM完全不利用信号样值之间的相关性。",
       "options": [
         {
           "key": "对",
@@ -1182,7 +1190,7 @@
       "explanation": "DPCM 利用相邻样值的相关性进行预测，并编码预测误差。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 157 题；章节测验-2 第 33 题（重复题，已合并）",
       "order": 33
     },
     {
@@ -1195,8 +1203,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "OOK 中，无载波状态可以用于表示一个二进制符号。",
+      "points": 1,
+      "title": "OOK中，无载波状态可以用于表示一个二进制符号。",
       "options": [
         {
           "key": "对",
@@ -1211,7 +1219,7 @@
       "explanation": "OOK 用有载波和无载波两个状态分别表示 1 和 0。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 159 题；章节测验-2 第 34 题（重复题，已合并）",
       "order": 34
     },
     {
@@ -1224,8 +1232,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "2FSK 仅通过载波幅度变化区分 0 和 1。",
+      "points": 1,
+      "title": "2FSK仅通过载波幅度变化区分0和1。",
       "options": [
         {
           "key": "对",
@@ -1240,7 +1248,7 @@
       "explanation": "2FSK 通过载波频率变化区分符号。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 160 题；章节测验-2 第 35 题（重复题，已合并）",
       "order": 35
     },
     {
@@ -1253,8 +1261,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "BPSK 相干载波出现 \\(\\pi\\) 相位模糊时，可能使判决整体反相。",
+      "points": 1,
+      "title": "BPSK相干载波出现π相位模糊时，可能使判决整体反相。",
       "options": [
         {
           "key": "对",
@@ -1266,10 +1274,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "恢复载波的 \\(180^\\circ\\) 相位模糊可能导致所有比特判决反转。",
+      "explanation": "原命题表述正确。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 161 题；章节测验-2 第 36 题（重复题，已合并）",
       "order": 36
     },
     {
@@ -1282,8 +1290,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "DPSK 只使用当前符号的绝对相位表示信息。",
+      "points": 1,
+      "title": "DPSK只使用当前符号的绝对相位表示信息。",
       "options": [
         {
           "key": "对",
@@ -1298,7 +1306,7 @@
       "explanation": "DPSK 使用相邻符号之间的相对相位变化。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 162 题；章节测验-2 第 37 题（重复题，已合并）",
       "order": 37
     },
     {
@@ -1311,7 +1319,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "码元速率与映射比特率在所有调制方式中都相等。",
       "options": [
         {
@@ -1327,7 +1335,7 @@
       "explanation": "多进制调制中，一个码元可携带多个比特，因此比特率不一定等于码元速率。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 163 题；章节测验-2 第 38 题（重复题，已合并）",
       "order": 38
     },
     {
@@ -1340,7 +1348,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "取样时刻偏离最佳判决位置可能增加误码率。",
       "options": [
         {
@@ -1356,7 +1364,7 @@
       "explanation": "偏离最佳取样点会降低判决裕量，增加误判可能。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 165 题；章节测验-2 第 39 题（重复题，已合并）",
       "order": 39
     },
     {
@@ -1369,7 +1377,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "载波同步、位同步和帧同步可以相互完全替代。",
       "options": [
         {
@@ -1385,7 +1393,7 @@
       "explanation": "三者分别解决载波恢复、码元定时和帧边界识别问题，任务不同。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 166 题；章节测验-2 第 40 题（重复题，已合并）",
       "order": 40
     },
     {
@@ -1398,7 +1406,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "帧同步码应便于与普通信息序列区分。",
       "options": [
         {
@@ -1414,7 +1422,7 @@
       "explanation": "帧同步码应具有明显特征，便于接收端可靠识别帧边界。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 167 题；章节测验-2 第 41 题（重复题，已合并）",
       "order": 41
     },
     {
@@ -1427,7 +1435,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "主从同步系统无需考虑主时钟失效。",
       "options": [
         {
@@ -1443,7 +1451,7 @@
       "explanation": "主从同步系统必须考虑主时钟故障、备用时钟切换和定时保护。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 168 题；章节测验-2 第 42 题（重复题，已合并）",
       "order": 42
     },
     {
@@ -1456,8 +1464,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "自由空间其他条件相同，距离翻倍时路径损耗约增加 6 dB。",
+      "points": 1,
+      "title": "自由空间其他条件相同，距离翻倍时路径损耗约增加6dB。",
       "options": [
         {
           "key": "对",
@@ -1469,10 +1477,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "距离翻倍时，自由空间路径损耗增加 \\(20\\lg2\\approx6\\) dB。",
+      "explanation": "距离翻倍时，自由空间路径损耗增加 20\\lg2\\approx6 dB。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 179 题；章节测验-2 第 43 题（重复题，已合并）",
       "order": 43
     },
     {
@@ -1485,7 +1493,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "阴影衰落通常来源于障碍物遮挡。",
       "options": [
         {
@@ -1501,7 +1509,7 @@
       "explanation": "大型障碍物引起的大尺度遮挡会产生阴影衰落。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 180 题；章节测验-2 第 44 题（重复题，已合并）",
       "order": 44
     },
     {
@@ -1514,7 +1522,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "多径分量在接收端只会相互增强，绝不可能相消。",
       "options": [
         {
@@ -1530,7 +1538,7 @@
       "explanation": "多径分量可能同相增强，也可能反相抵消。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 181 题；章节测验-2 第 45 题（重复题，已合并）",
       "order": 45
     },
     {
@@ -1543,7 +1551,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "载频相同且方向相同时，运动速度越大，多普勒频移绝对值越大。",
       "options": [
         {
@@ -1559,7 +1567,7 @@
       "explanation": "多普勒频移与相对速度成正比。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 182 题；章节测验-2 第 46 题（重复题，已合并）",
       "order": 46
     },
     {
@@ -1572,7 +1580,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "莱斯模型中直达分量趋于零时，可退化为瑞利模型。",
       "options": [
         {
@@ -1588,7 +1596,7 @@
       "explanation": "莱斯模型的直达分量消失后，就只剩散射分量，即退化为瑞利衰落。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 183 题；章节测验-2 第 47 题（重复题，已合并）",
       "order": 47
     },
     {
@@ -1601,7 +1609,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "完全相关的多个衰落支路一定能取得很大的分集增益。",
       "options": [
         {
@@ -1617,7 +1625,7 @@
       "explanation": "完全相关时各支路同时衰落，难以获得分集增益。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 184 题；章节测验-2 第 48 题（重复题，已合并）",
       "order": 48
     },
     {
@@ -1630,7 +1638,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "判决反馈均衡器可能出现错误判决传播。",
       "options": [
         {
@@ -1646,7 +1654,7 @@
       "explanation": "已判决符号若出错，会通过反馈环节影响后续判决，形成误差传播。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 185 题；章节测验-2 第 49 题（重复题，已合并）",
       "order": 49
     },
     {
@@ -1659,8 +1667,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "OFDM 子载波频谱必须完全不重叠。",
+      "points": 1,
+      "title": "OFDM子载波频谱必须完全不重叠。",
       "options": [
         {
           "key": "对",
@@ -1675,7 +1683,7 @@
       "explanation": "OFDM 子载波频谱可以重叠，但必须保持正交。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 186 题；章节测验-2 第 50 题（重复题，已合并）",
       "order": 50
     },
     {
@@ -1688,7 +1696,7 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
+      "points": 1,
       "title": "循环前缀越长越好，且不占用任何传输时间。",
       "options": [
         {
@@ -1704,7 +1712,7 @@
       "explanation": "循环前缀可抑制符号间干扰，但过长会降低传输效率并消耗功率。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 187 题；章节测验-2 第 51 题（重复题，已合并）",
       "order": 51
     },
     {
@@ -1717,8 +1725,8 @@
       "sourceQuestionId": "",
       "type": "judge",
       "typeLabel": "判断题",
-      "points": 0,
-      "title": "OFDM 多个子载波叠加可能产生较高峰均比。",
+      "points": 1,
+      "title": "OFDM多个子载波叠加可能产生较高峰均比。",
       "options": [
         {
           "key": "对",
@@ -1733,7 +1741,7 @@
       "explanation": "多个子载波同相叠加时可能出现很高的瞬时峰值功率。",
       "reference": "",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 188 题；章节测验-2 第 52 题（重复题，已合并）",
       "order": 52
     },
     {
@@ -1746,14 +1754,14 @@
       "sourceQuestionId": "",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 0,
+      "points": 4,
       "title": "简述信源编码的目的及定长码与变长码的区别。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "信源编码的目的在于去除或压缩信源冗余，在满足无失真或限定失真要求的情况下降低表示信息所需的比特数，从而提高传输和存储效率。\n\n定长码的所有码字长度相同，编码、译码和同步较简单，但码字利用率可能较低。变长码按符号出现概率分配长度，高概率符号使用短码、低概率符号使用长码，平均码长较短；但需要满足唯一可译条件，实际中常采用前缀码，编码和译码也相对复杂。",
+      "reference": "信源编码的目的在于去除或压缩信源冗余，在满足无失真或限定失真要求的情况下降低表示信息所需的比特数，从而提高传输和存储效率。\n定长码的所有码字长度相同，编码、译码和同步较简单，但码字利用率可能较低。变长码按符号出现概率分配长度，高概率符号使用短码、低概率符号使用长码，平均码长较短；但需要满足唯一可译条件，实际中常采用前缀码，编码和译码也相对复杂。",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 250 题；章节测验-2 第 53 题（重复题，已合并）",
       "order": 53
     },
     {
@@ -1766,14 +1774,14 @@
       "sourceQuestionId": "",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 0,
+      "points": 4,
       "title": "比较均匀量化与非均匀量化。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "均匀量化的量化间隔固定相等，实现简单，但小信号占用的量化级较少，信噪比较差。\n\n非均匀量化的量化间隔不相等，通常在小信号处采用较小间隔、大信号处采用较大间隔，可以改善小信号的信噪比和平均量化性能。压扩量化是常用的非均匀量化方法，但实现比均匀量化复杂。",
+      "reference": "均匀量化的量化间隔固定相等，实现简单，但小信号占用的量化级较少，信噪比较差。\n非均匀量化的量化间隔不相等，通常在小信号处采用较小间隔、大信号处采用较大间隔，可以改善小信号的信噪比和平均量化性能。压扩量化是常用的非均匀量化方法，但实现比均匀量化复杂。",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 251 题；章节测验-2 第 54 题（重复题，已合并）",
       "order": 54
     },
     {
@@ -1786,14 +1794,14 @@
       "sourceQuestionId": "",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 0,
-      "title": "比较 2ASK、2FSK、2PSK 分别改变的载波参数。",
+      "points": 4,
+      "title": "比较2ASK、2FSK、2PSK分别改变的载波参数。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "- 2ASK 改变载波幅度，常以载波有无表示二进制符号。\n- 2FSK 改变载波频率，用两个不同频率表示二进制符号。\n- 2PSK 改变载波相位，通常用相差 \\(180^\\circ\\) 的两个相位表示二进制符号。",
+      "reference": "- 2ASK 改变载波幅度，常以载波有无表示二进制符号。\n- 2FSK 改变载波频率，用两个不同频率表示二进制符号。\n- 2PSK 改变载波相位，通常用相差 180^\\circ 的两个相位表示二进制符号。",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 252 题；章节测验-2 第 55 题（重复题，已合并）",
       "order": 55
     },
     {
@@ -1806,14 +1814,14 @@
       "sourceQuestionId": "",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 0,
+      "points": 4,
       "title": "分别说明载波同步、位同步、帧同步和网同步的任务。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "- 载波同步：恢复与发送端同频、同相的载波，为相干解调提供参考。\n- 位同步：确定码元边界和最佳取样时刻，使接收端与发送端的码元节拍一致。\n- 帧同步：识别帧的起止位置，使接收端能够正确划分和提取帧内容。\n- 网同步：使通信网中各节点或设备的时钟保持一致，防止滑码，保证交换、复用和全网定时正常。",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 253 题；章节测验-2 第 56 题（重复题，已合并）",
       "order": 56
     },
     {
@@ -1826,14 +1834,14 @@
       "sourceQuestionId": "",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 0,
-      "title": "均匀 PCM 对小幅度语音的量化质量较差。请分析原因，并比较增加编码位数与采用压扩量化两种改进方案。",
+      "points": 8,
+      "title": "均匀PCM对小幅度语音的量化质量较差。请分析原因，并比较增加编码位数与采用压扩量化两种改进方案。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "均匀 PCM 的所有量化间隔相同。语音信号动态范围大，且小幅度样值出现较多。小信号的功率较小，但量化噪声仍可能接近一个固定水平，因此小信号的信噪比低，语音细节容易被量化噪声掩盖。\n\n增加编码位数可以增加量化级数、减小量化间隔。在不过载的情况下，每增加一位，量化信噪比通常约提高 6 dB。该方法简单，对所有幅度的信号都有效，但会增加数据率、带宽、存储和功耗。\n\n压扩量化先对信号进行非线性压缩，再进行均匀量化，接收端执行相反扩张。它能给小信号分配更多量化级，给大信号分配较少量化级，在相同编码位数下改善小信号和平均量化信噪比，更适合动态范围较大的语音信号和带宽、功耗受限的物联网应用；代价是实现和标准设计更复杂，并需要合理控制动态范围。\n\n**简要结论：** 均匀量化对小信号精度不足；增加编码位数能整体降低量化误差，但代价是码率增加；压扩量化能在相同码率下重点改善小信号质量。",
+      "reference": "均匀 PCM 的所有量化间隔相同。语音信号动态范围大，且小幅度样值出现较多。小信号的功率较小，但量化噪声仍可能接近一个固定水平，因此小信号的信噪比低，语音细节容易被量化噪声掩盖。\n增加编码位数可以增加量化级数、减小量化间隔。在不过载的情况下，每增加一位，量化信噪比通常约提高 6 dB。该方法简单，对所有幅度的信号都有效，但会增加数据率、带宽、存储和功耗。\n压扩量化先对信号进行非线性压缩，再进行均匀量化，接收端执行相反扩张。它能给小信号分配更多量化级，给大信号分配较少量化级，在相同编码位数下改善小信号和平均量化信噪比，更适合动态范围较大的语音信号和带宽、功耗受限的物联网应用；代价是实现和标准设计更复杂，并需要合理控制动态范围。\n**简要结论：** 均匀量化对小信号精度不足；增加编码位数能整体降低量化误差，但代价是码率增加；压扩量化能在相同码率下重点改善小信号质量。",
       "knowledge": "",
-      "originalSource": "",
+      "originalSource": "综合测验 第 265 题；章节测验-2 第 57 题（重复题，已合并）",
       "order": 57
     },
     {
@@ -1867,10 +1875,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“射频信号”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 62 题；章节测验-3 第 1 题（重复题，已合并）",
       "order": 58
     },
     {
@@ -1904,10 +1912,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“感知层”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 63 题；章节测验-3 第 2 题（重复题，已合并）",
       "order": 59
     },
     {
@@ -1941,10 +1949,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“标签、读写器、系统高层”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 64 题；章节测验-3 第 3 题（重复题，已合并）",
       "order": 60
     },
     {
@@ -1978,10 +1986,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“作为物品标识与数据载体”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 65 题；章节测验-3 第 4 题（重复题，已合并）",
       "order": 61
     },
     {
@@ -2015,10 +2023,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“读写器”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 66 题；章节测验-3 第 5 题（重复题，已合并）",
       "order": 62
     },
     {
@@ -2052,10 +2060,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“读写器与后端应用”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 67 题；章节测验-3 第 6 题（重复题，已合并）",
       "order": 63
     },
     {
@@ -2089,10 +2097,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“电感耦合”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 68 题；章节测验-3 第 7 题（重复题，已合并）",
       "order": 64
     },
     {
@@ -2126,10 +2134,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“调制反向散射”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 69 题；章节测验-3 第 8 题（重复题，已合并）",
       "order": 65
     },
     {
@@ -2163,10 +2171,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“时隙边界”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 70 题；章节测验-3 第 9 题（重复题，已合并）",
       "order": 66
     },
     {
@@ -2200,10 +2208,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“按标识位将冲突集合分裂”。",
+      "reference": "",
       "knowledge": "RFID 基础与防碰撞",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 71 题；章节测验-3 第 10 题（重复题，已合并）",
       "order": 67
     },
     {
@@ -2237,10 +2245,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“IEEE 802.15.4”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 72 题；章节测验-3 第 11 题（重复题，已合并）",
       "order": 68
     },
     {
@@ -2274,10 +2282,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“侦听信道并使用退避降低冲突概率”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 73 题；章节测验-3 第 12 题（重复题，已合并）",
       "order": 69
     },
     {
@@ -2311,10 +2319,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“协调器”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 74 题；章节测验-3 第 13 题（重复题，已合并）",
       "order": 70
     },
     {
@@ -2348,10 +2356,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“路由器节点”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 75 题；章节测验-3 第 14 题（重复题，已合并）",
       "order": 71
     },
     {
@@ -2385,10 +2393,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“全功能设备FFD”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 76 题；章节测验-3 第 15 题（重复题，已合并）",
       "order": 72
     },
     {
@@ -2422,10 +2430,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“协调器”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 77 题；章节测验-3 第 16 题（重复题，已合并）",
       "order": 73
     },
     {
@@ -2459,10 +2467,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“网状Mesh”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 78 题；章节测验-3 第 17 题（重复题，已合并）",
       "order": 74
     },
     {
@@ -2496,10 +2504,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“需要向目的节点发送且缺少可用路由时”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 79 题；章节测验-3 第 18 题（重复题，已合并）",
       "order": 75
     },
     {
@@ -2533,10 +2541,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“散射网”。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 80 题；章节测验-3 第 19 题（重复题，已合并）",
       "order": 76
     },
     {
@@ -2570,10 +2578,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“BLE”。",
+      "reference": "",
       "knowledge": "蓝牙 BLE",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 81 题；章节测验-3 第 20 题（重复题，已合并）",
       "order": 77
     },
     {
@@ -2607,10 +2615,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“802.11ax”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 82 题；章节测验-3 第 21 题（重复题，已合并）",
       "order": 78
     },
     {
@@ -2644,10 +2652,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“划分频率资源供多个用户调度传输”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 83 题；章节测验-3 第 22 题（重复题，已合并）",
       "order": 79
     },
     {
@@ -2681,10 +2689,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“减少布线并支持移动接入”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 84 题；章节测验-3 第 23 题（重复题，已合并）",
       "order": 80
     },
     {
@@ -2718,10 +2726,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“物理层和数据链路层”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 85 题；章节测验-3 第 24 题（重复题，已合并）",
       "order": 81
     },
     {
@@ -2755,10 +2763,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“MAC”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 86 题；章节测验-3 第 25 题（重复题，已合并）",
       "order": 82
     },
     {
@@ -2792,10 +2800,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“匹配的扩频码解扩”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 87 题；章节测验-3 第 26 题（重复题，已合并）",
       "order": 83
     },
     {
@@ -2829,10 +2837,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“按约定序列切换载波频率”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 88 题；章节测验-3 第 27 题（重复题，已合并）",
       "order": 84
     },
     {
@@ -2866,10 +2874,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“将适合的WiFi业务迁至5GHz”。",
+      "reference": "",
       "knowledge": "WLAN 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 89 题；章节测验-3 第 28 题（重复题，已合并）",
       "order": 85
     },
     {
@@ -2903,10 +2911,10 @@
         }
       ],
       "answer": "C",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 C，核心是“13.56MHz”。",
+      "reference": "",
       "knowledge": "NFC",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 90 题；章节测验-3 第 29 题（重复题，已合并）",
       "order": 86
     },
     {
@@ -2940,10 +2948,10 @@
         }
       ],
       "answer": "D",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 D，核心是“卡模拟”。",
+      "reference": "",
       "knowledge": "NFC",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 91 题；章节测验-3 第 30 题（重复题，已合并）",
       "order": 87
     },
     {
@@ -2977,10 +2985,10 @@
         }
       ],
       "answer": "A",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 A，核心是“电磁波传播时间”。",
+      "reference": "",
       "knowledge": "UWB",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 92 题；章节测验-3 第 31 题（重复题，已合并）",
       "order": 88
     },
     {
@@ -3014,10 +3022,10 @@
         }
       ],
       "answer": "B",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "本题应选 B，核心是“基于IPv6并使用6LoWPAN”。",
+      "reference": "",
       "knowledge": "Thread",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 93 题；章节测验-3 第 32 题（重复题，已合并）",
       "order": 89
     },
     {
@@ -3043,10 +3051,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 189 题；章节测验-3 第 33 题（重复题，已合并）",
       "order": 90
     },
     {
@@ -3072,10 +3080,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 190 题；章节测验-3 第 34 题（重复题，已合并）",
       "order": 91
     },
     {
@@ -3101,10 +3109,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 191 题；章节测验-3 第 35 题（重复题，已合并）",
       "order": 92
     },
     {
@@ -3130,10 +3138,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 192 题；章节测验-3 第 36 题（重复题，已合并）",
       "order": 93
     },
     {
@@ -3159,10 +3167,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 193 题；章节测验-3 第 37 题（重复题，已合并）",
       "order": 94
     },
     {
@@ -3188,10 +3196,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 194 题；章节测验-3 第 38 题（重复题，已合并）",
       "order": 95
     },
     {
@@ -3217,10 +3225,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 195 题；章节测验-3 第 39 题（重复题，已合并）",
       "order": 96
     },
     {
@@ -3246,10 +3254,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 196 题；章节测验-3 第 40 题（重复题，已合并）",
       "order": 97
     },
     {
@@ -3275,10 +3283,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 197 题；章节测验-3 第 41 题（重复题，已合并）",
       "order": 98
     },
     {
@@ -3304,10 +3312,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "RFID 原理与应用",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 198 题；章节测验-3 第 42 题（重复题，已合并）",
       "order": 99
     },
     {
@@ -3333,10 +3341,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 199 题；章节测验-3 第 43 题（重复题，已合并）",
       "order": 100
     },
     {
@@ -3362,10 +3370,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 200 题；章节测验-3 第 44 题（重复题，已合并）",
       "order": 101
     },
     {
@@ -3391,10 +3399,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 201 题；章节测验-3 第 45 题（重复题，已合并）",
       "order": 102
     },
     {
@@ -3420,10 +3428,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 202 题；章节测验-3 第 46 题（重复题，已合并）",
       "order": 103
     },
     {
@@ -3449,10 +3457,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 203 题；章节测验-3 第 47 题（重复题，已合并）",
       "order": 104
     },
     {
@@ -3478,10 +3486,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 204 题；章节测验-3 第 48 题（重复题，已合并）",
       "order": 105
     },
     {
@@ -3507,10 +3515,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 205 题；章节测验-3 第 49 题（重复题，已合并）",
       "order": 106
     },
     {
@@ -3536,10 +3544,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 206 题；章节测验-3 第 50 题（重复题，已合并）",
       "order": 107
     },
     {
@@ -3565,10 +3573,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "蓝牙与共存",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 207 题；章节测验-3 第 51 题（重复题，已合并）",
       "order": 108
     },
     {
@@ -3594,10 +3602,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "BLE",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 208 题；章节测验-3 第 52 题（重复题，已合并）",
       "order": 109
     },
     {
@@ -3623,10 +3631,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "WLAN、OFDM 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 209 题；章节测验-3 第 53 题（重复题，已合并）",
       "order": 110
     },
     {
@@ -3652,10 +3660,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "WLAN、OFDM 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 210 题；章节测验-3 第 54 题（重复题，已合并）",
       "order": 111
     },
     {
@@ -3681,10 +3689,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "WLAN、OFDM 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 211 题；章节测验-3 第 55 题（重复题，已合并）",
       "order": 112
     },
     {
@@ -3710,10 +3718,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "WLAN、OFDM 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 212 题；章节测验-3 第 56 题（重复题，已合并）",
       "order": 113
     },
     {
@@ -3739,10 +3747,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "WLAN、OFDM 与扩频",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 213 题；章节测验-3 第 57 题（重复题，已合并）",
       "order": 114
     },
     {
@@ -3768,10 +3776,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "NFC",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 214 题；章节测验-3 第 58 题（重复题，已合并）",
       "order": 115
     },
     {
@@ -3797,10 +3805,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "NFC",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 215 题；章节测验-3 第 59 题（重复题，已合并）",
       "order": 116
     },
     {
@@ -3826,10 +3834,10 @@
         }
       ],
       "answer": "对",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述正确。",
+      "reference": "",
       "knowledge": "Thread",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 216 题；章节测验-3 第 60 题（重复题，已合并）",
       "order": 117
     },
     {
@@ -3855,10 +3863,10 @@
         }
       ],
       "answer": "错",
-      "explanation": "",
-      "reference": "**选项**",
+      "explanation": "原命题表述错误。",
+      "reference": "",
       "knowledge": "2.4 GHz 共存",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 217 题；章节测验-3 第 61 题（重复题，已合并）",
       "order": 118
     },
     {
@@ -3871,14 +3879,14 @@
       "sourceQuestionId": "`886511685`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 5,
+      "points": 4,
       "title": "区分电感耦合与电磁反向散射。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "电感耦合与电磁反向散射的区别主要体现在工作频段、距离和能量/信息传输机理。电感耦合用于低频、高频近场系统，读写器与标签线圈通过交变磁场耦合；标签从射频场取能，并通过改变负载阻抗进行负载调制回传数据，作用距离通常较短。电磁反向散射用于UHF或微波远场系统，读写器发射载波，标签接收少量能量后通过改变天线匹配状态，对反射载波进行振幅或相位调制，形成反向散射信号；其通信距离相对较远，但更容易受金属、液体、多径和标签方向影响。",
       "knowledge": "RFID 耦合方式",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 255 题；章节测验-3 第 62 题（重复题，已合并）",
       "order": 119
     },
     {
@@ -3891,14 +3899,14 @@
       "sourceQuestionId": "`886511707`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 5,
+      "points": 4,
       "title": "简述ZigBee协调器、路由器和终端节点的职责。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "ZigBee协调器负责建立并管理网络，选择PAN ID和信道、分配网络地址、设置安全参数并允许节点入网。路由器是全功能设备，除运行应用外还负责路由发现、消息转发、扩展网络覆盖并可为子节点提供接入。终端节点通常运行具体业务，可采用精简功能设备，主要与其父节点通信，不承担多跳转发，并可周期性休眠以降低功耗。",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 256 题；章节测验-3 第 63 题（重复题，已合并）",
       "order": 120
     },
     {
@@ -3911,14 +3919,14 @@
       "sourceQuestionId": "`886511708`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 5,
+      "points": 4,
       "title": "比较ZigBee星型、树型和网状拓扑。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "星型拓扑由协调器直接连接终端，结构简单、管理方便、时延较低，但覆盖范围受协调器能力限制，中心节点故障会影响网络。树型拓扑以协调器为根、路由器为中间节点，可扩展覆盖范围并保持一定层级管理，但父节点失效可能使其下级节点失联。网状拓扑允许路由器沿多条路径多跳转发，可靠性、覆盖和自愈能力较好，但路由发现、存储与控制开销更大，端到端时延和复杂度更高。",
       "knowledge": "ZigBee 网络",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 257 题；章节测验-3 第 64 题（重复题，已合并）",
       "order": 121
     },
     {
@@ -3931,14 +3939,14 @@
       "sourceQuestionId": "`886511709`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 5,
+      "points": 4,
       "title": "简述蓝牙降低干扰与传输差错的措施。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "蓝牙在2.4 GHz开放频段采用跳频和自适应跳频，把受干扰严重的信道从跳频图中剔除；链路层通过CRC校验、确认和ARQ重传检测并恢复传输错误，必要时采用前向纠错。系统还可进行信道评估、发射功率控制和数据白化，并可调整连接参数以避开拥塞、降低冲突；BLE通过较短连接事件和低占空比进一步减少相互干扰。",
       "knowledge": "蓝牙抗干扰",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 258 题；章节测验-3 第 65 题（重复题，已合并）",
       "order": 122
     },
     {
@@ -3951,14 +3959,14 @@
       "sourceQuestionId": "`886511686`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 6,
+      "points": 8,
       "title": "仓库希望整车货物通过门口时自动登记，出现标签漏读和重复记录。请设计系统并分析改进措施。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "可在仓库门口部署无源UHF RFID系统：整车、托盘和纸箱使用唯一EPC标签，门架设置读写器及左右、顶部多组圆极化天线分区覆盖；金属或液体货物采用抗金属、抗液体标签，控制车辆通过速度并设置明确的读取区域。读写器数据经中间件汇聚，按EPC、读取器/天线编号、批次、时间窗和到场清单去重，首次识别登记，后续重复读取只更新状态；漏读时可增加天线分集、调整功率与极化、改善标签朝向和间距，减少密集标签碰撞，并用多次扫描、异常清单和人工复核兜底。系统应与WMS联动记录车辆、货物、时间和出入方向，并以读取率、漏读率、重复率、误读率和异常处理时长验收。",
       "knowledge": "RFID 仓储系统",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 267 题；章节测验-3 第 66 题（重复题，已合并）",
       "order": 123
     },
     {
@@ -3971,14 +3979,14 @@
       "sourceQuestionId": "`886511731`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 6,
+      "points": 8,
       "title": "某教室WiFi传视频时，2.4GHz ZigBee传感数据丢包明显增多。请分析原因，提出方案和验证指标。",
       "options": [],
       "answer": "",
       "explanation": "",
       "reference": "原因是2.4 GHz为共享免许可频段，教室WiFi视频业务占空比高，OFDM信号与802.15.4信道重叠，会抬高噪声并造成CCA持续忙；多个AP和终端还会产生同频、邻频、隐藏终端冲突，若ZigBee节点靠近AP或信号余量不足，丢包会明显增加。方案是把适合的WiFi视频迁到5 GHz或6 GHz，2.4 GHz按1/6/11规划信道并降低不必要发射功率；为ZigBee选择远离主要WiFi信道的802.15.4信道，启用信道扫描与自适应换信道，优化节点空间隔离、天线方向和多跳路由，降低采集占空比并使用确认重传，必要时采用时间调度。验证指标包括ZigBee分组投递率、丢包率、RSSI/LQI、重传次数、时延与抖动，以及WiFi吞吐量、视频卡顿和丢帧率；应在不同并发负载、距离和信道方案下做前后对比。",
       "knowledge": "WLAN 与 ZigBee 共存",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 268 题；章节测验-3 第 67 题（重复题，已合并）",
       "order": 124
     },
     {
@@ -3991,14 +3999,14 @@
       "sourceQuestionId": "`886511732`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 7,
+      "points": 8,
       "title": "校园系统分别需要刷卡门禁、室内资产精确定位和多品牌低速传感器IPv6组网。请从NFC、UWB、Thread中选择并说明。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "刷卡门禁选用NFC：利用13.56 MHz近场通信，用户用卡片、手机卡模拟等方式靠近门禁终端完成身份认证；距离短、功耗低、成本低，适合出入口身份核验。室内资产精确定位选用UWB：采用超宽带脉冲进行飞行时间/到达时间差测距，可达到厘米至分米级精度、抗多径能力较强，需部署多个锚点并保证定位区域覆盖。多品牌低速传感器IPv6组网选用Thread：基于IPv6和6LoWPAN的低功耗网状网络，支持多厂商设备互通、自组网和自愈，适合温湿度、门磁等小数据量设备；通过边界路由器接入校园IP网络，并做好网络安全与设备认证。\n\n\n\n\n## 文档说明\n\n- 题目字段采用稳定的 Markdown 标题和列表结构，可直接作为静态站点内容源。\n- 每道题使用 HTML 折叠标签默认隐藏答案；若站点禁用了原始 HTML，可将答案节点改为普通段落或由站点模板接管。\n- 题目 ID 可用于建立错题记录、收藏和学习进度。",
+      "reference": "刷卡门禁选用NFC：利用13.56 MHz近场通信，用户用卡片、手机卡模拟等方式靠近门禁终端完成身份认证；距离短、功耗低、成本低，适合出入口身份核验。室内资产精确定位选用UWB：采用超宽带脉冲进行飞行时间/到达时间差测距，可达到厘米至分米级精度、抗多径能力较强，需部署多个锚点并保证定位区域覆盖。多品牌低速传感器IPv6组网选用Thread：基于IPv6和6LoWPAN的低功耗网状网络，支持多厂商设备互通、自组网和自愈，适合温湿度、门磁等小数据量设备；通过边界路由器接入校园IP网络，并做好网络安全与设备认证。\n\n- 题目字段采用稳定的 Markdown 标题和列表结构，可直接作为静态站点内容源。\n- 每道题使用 HTML 折叠标签默认隐藏答案；若站点禁用了原始 HTML，可将答案节点改为普通段落或由站点模板接管。\n- 题目 ID 可用于建立错题记录、收藏和学习进度。",
       "knowledge": "NFC、UWB 与 Thread 选型",
-      "originalSource": "超星学习通｜章节测验-3（考试ID 171594522）",
+      "originalSource": "综合测验 第 269 题；章节测验-3 第 68 题（重复题，已合并）",
       "order": 125
     },
     {
@@ -4033,9 +4041,9 @@
       ],
       "answer": "D",
       "explanation": "NB-IoT通常由运营商在授权频谱中部署，因此能获得较可控的覆盖、干扰和运营保障。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 94 题；章节测验-4 第 1 题（重复题，已合并）",
       "order": 126
     },
     {
@@ -4070,9 +4078,9 @@
       ],
       "answer": "A",
       "explanation": "利用LTE频谱边缘的保护频段部署，属于保护带部署模式。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 95 题；章节测验-4 第 2 题（重复题，已合并）",
       "order": 127
     },
     {
@@ -4107,9 +4115,9 @@
       ],
       "answer": "B",
       "explanation": "带内部署会在已有LTE载波内复用资源块，与LTE共存。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 96 题；章节测验-4 第 3 题（重复题，已合并）",
       "order": 128
     },
     {
@@ -4144,9 +4152,9 @@
       ],
       "answer": "C",
       "explanation": "PSM让终端在长时间内停止大部分监听和活动，以换取更低的平均功耗，但下行可达性会降低。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 97 题；章节测验-4 第 4 题（重复题，已合并）",
       "order": 129
     },
     {
@@ -4181,9 +4189,9 @@
       ],
       "answer": "D",
       "explanation": "eDRX通过延长终端两次接收机会之间的间隔，减少唤醒次数和平均功耗。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 98 题；章节测验-4 第 5 题（重复题，已合并）",
       "order": 130
     },
     {
@@ -4218,9 +4226,9 @@
       ],
       "answer": "A",
       "explanation": "LoRa采用扩频调制，能在低速率下实现较长距离和较好的抗干扰能力。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 99 题；章节测验-4 第 6 题（重复题，已合并）",
       "order": 131
     },
     {
@@ -4255,9 +4263,9 @@
       ],
       "answer": "B",
       "explanation": "LoRa主要描述物理层调制技术，LoRaWAN则定义网络协议、设备分类、网关和网络服务器等架构。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 100 题；章节测验-4 第 7 题（重复题，已合并）",
       "order": 132
     },
     {
@@ -4292,9 +4300,9 @@
       ],
       "answer": "C",
       "explanation": "Class A只在每次上行后开启短暂接收窗，空闲时休眠，是LoRaWAN中功耗最低的典型类别。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 101 题；章节测验-4 第 8 题（重复题，已合并）",
       "order": 133
     },
     {
@@ -4329,9 +4337,9 @@
       ],
       "answer": "D",
       "explanation": "LoRaWAN典型结构是终端到网关、网关到网络服务器，多个网关覆盖区域可构成星中之星拓扑。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 102 题；章节测验-4 第 9 题（重复题，已合并）",
       "order": 134
     },
     {
@@ -4366,9 +4374,9 @@
       ],
       "answer": "A",
       "explanation": "MQTT代理通过主题匹配把发布者的消息转发给相应订阅者。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 103 题；章节测验-4 第 10 题（重复题，已合并）",
       "order": 135
     },
     {
@@ -4403,9 +4411,9 @@
       ],
       "answer": "B",
       "explanation": "QoS 1表示至少一次交付，消息可能因重传而重复，所以业务层仍需处理幂等。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 104 题；章节测验-4 第 11 题（重复题，已合并）",
       "order": 136
     },
     {
@@ -4440,9 +4448,9 @@
       ],
       "answer": "A",
       "explanation": "移动通信允许通信一方或双方处于移动状态，并支持切换和位置管理等能力。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 105 题；章节测验-4 第 12 题（重复题，已合并）",
       "order": 137
     },
     {
@@ -4477,9 +4485,9 @@
       ],
       "answer": "B",
       "explanation": "第一代蜂窝移动通信以模拟调制和模拟语音业务为主要特征。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 106 题；章节测验-4 第 13 题（重复题，已合并）",
       "order": 138
     },
     {
@@ -4514,9 +4522,9 @@
       ],
       "answer": "A",
       "explanation": "小区制通过较小覆盖区、频率复用和更多基站来提高系统容量。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 107 题；章节测验-4 第 14 题（重复题，已合并）",
       "order": 139
     },
     {
@@ -4551,9 +4559,9 @@
       ],
       "answer": "B",
       "explanation": "TDMA把时间划分为时间槽，不同用户使用不同时隙接入。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 108 题；章节测验-4 第 15 题（重复题，已合并）",
       "order": 140
     },
     {
@@ -4588,9 +4596,9 @@
       ],
       "answer": "C",
       "explanation": "CDMA用不同扩频码区分用户，在相同频段和时间上实现多址。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 109 题；章节测验-4 第 16 题（重复题，已合并）",
       "order": 141
     },
     {
@@ -4625,9 +4633,9 @@
       ],
       "answer": "D",
       "explanation": "FDD为上行和下行分配不同频率资源，两个方向可同时传输。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 110 题；章节测验-4 第 17 题（重复题，已合并）",
       "order": 142
     },
     {
@@ -4662,9 +4670,9 @@
       ],
       "answer": "A",
       "explanation": "TDD在同一频率资源的不同时间槽中交替传输上行和下行。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 111 题；章节测验-4 第 18 题（重复题，已合并）",
       "order": 143
     },
     {
@@ -4699,9 +4707,9 @@
       ],
       "answer": "B",
       "explanation": "OFDMA把频率资源划分为正交子载波，并在资源块层面分配给不同用户。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 112 题；章节测验-4 第 19 题（重复题，已合并）",
       "order": 144
     },
     {
@@ -4736,9 +4744,9 @@
       ],
       "answer": "C",
       "explanation": "MIMO的基本特征是发送端和接收端均使用多根天线，以利用空间维度。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 113 题；章节测验-4 第 20 题（重复题，已合并）",
       "order": 145
     },
     {
@@ -4773,9 +4781,9 @@
       ],
       "answer": "D",
       "explanation": "URLLC对应超可靠低时延通信，是5G的三大典型场景之一。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 114 题；章节测验-4 第 21 题（重复题，已合并）",
       "order": 146
     },
     {
@@ -4810,9 +4818,9 @@
       ],
       "answer": "B",
       "explanation": "ZigBee适合低功耗、低速率的室内多跳传感器网络。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 115 题；章节测验-4 第 22 题（重复题，已合并）",
       "order": 147
     },
     {
@@ -4847,9 +4855,9 @@
       ],
       "answer": "C",
       "explanation": "持续视频传输需要较高吞吐和较低时延，Wi-Fi等宽带链路更合适。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 116 题；章节测验-4 第 23 题（重复题，已合并）",
       "order": 148
     },
     {
@@ -4884,9 +4892,9 @@
       ],
       "answer": "D",
       "explanation": "城市抄表通常分散、终端多、速率低且依赖电池，应重点比较覆盖、功耗、连接规模和全生命周期成本。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 117 题；章节测验-4 第 24 题（重复题，已合并）",
       "order": 149
     },
     {
@@ -4921,9 +4929,9 @@
       ],
       "answer": "B",
       "explanation": "若另一方案各关键指标不差且至少一项更优，则该方案被另一方案支配。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 118 题；章节测验-4 第 25 题（重复题，已合并）",
       "order": 150
     },
     {
@@ -4958,9 +4966,9 @@
       ],
       "answer": "C",
       "explanation": "异构网关完成协议转换、数据汇聚、本地处理和向上回传，是异构终端接入网络的桥梁。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 119 题；章节测验-4 第 26 题（重复题，已合并）",
       "order": 151
     },
     {
@@ -4995,9 +5003,9 @@
       ],
       "answer": "D",
       "explanation": "在网关侧先过滤重复数据，可以降低上行流量、云侧负载和部分处理时延。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 120 题；章节测验-4 第 27 题（重复题，已合并）",
       "order": 152
     },
     {
@@ -5032,9 +5040,9 @@
       ],
       "answer": "B",
       "explanation": "RIS通过大量可调反射单元改变电磁波的相位、幅度和传播方向，从而改善覆盖。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 121 题；章节测验-4 第 28 题（重复题，已合并）",
       "order": 153
     },
     {
@@ -5069,9 +5077,9 @@
       ],
       "answer": "D",
       "explanation": "安全启动和固件签名验证用于阻止未授权或被篡改的固件执行。",
-      "reference": "**选项**",
+      "reference": "# 二、判断题",
       "knowledge": "物联网选型与系统能力",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 122 题；章节测验-4 第 29 题（重复题，已合并）",
       "order": 154
     },
     {
@@ -5098,9 +5106,9 @@
       ],
       "answer": "对",
       "explanation": "NB-IoT是低功耗广域物联网的代表技术，主要服务低速率、低成本、长待机业务。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 218 题；章节测验-4 第 30 题（重复题，已合并）",
       "order": 155
     },
     {
@@ -5127,9 +5135,9 @@
       ],
       "answer": "错",
       "explanation": "NB-IoT具有独立部署、保护带部署和带内部署等多种模式，并非只有一种部署方式。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 219 题；章节测验-4 第 31 题（重复题，已合并）",
       "order": 156
     },
     {
@@ -5156,9 +5164,9 @@
       ],
       "answer": "错",
       "explanation": "终端进入PSM后大部分时间不可达，网络通常需要等待终端下次唤醒或使用寻呼机制。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 220 题；章节测验-4 第 32 题（重复题，已合并）",
       "order": 157
     },
     {
@@ -5185,9 +5193,9 @@
       ],
       "answer": "对",
       "explanation": "延长eDRX周期能降低功耗，但终端响应下行命令的等待时间通常也会增加。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 221 题；章节测验-4 第 33 题（重复题，已合并）",
       "order": 158
     },
     {
@@ -5214,9 +5222,9 @@
       ],
       "answer": "错",
       "explanation": "LoRa是物理层调制，LoRaWAN是上层网络协议；部署LoRa链路不等于必须使用LoRaWAN。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 222 题；章节测验-4 第 34 题（重复题，已合并）",
       "order": 159
     },
     {
@@ -5243,9 +5251,9 @@
       ],
       "answer": "对",
       "explanation": "Class C几乎持续开启接收窗，下行响应更快，但同时比Class A消耗更多能量。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 223 题；章节测验-4 第 35 题（重复题，已合并）",
       "order": 160
     },
     {
@@ -5272,9 +5280,9 @@
       ],
       "answer": "错",
       "explanation": "LoRaWAN典型网络采用星型或星中之星拓扑，终端不承担多跳转发。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 224 题；章节测验-4 第 36 题（重复题，已合并）",
       "order": 161
     },
     {
@@ -5301,9 +5309,9 @@
       ],
       "answer": "错",
       "explanation": "QoS 0是不确认、不重传的至多一次语义，不能保证消息一定到达。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 225 题；章节测验-4 第 37 题（重复题，已合并）",
       "order": 162
     },
     {
@@ -5330,9 +5338,9 @@
       ],
       "answer": "错",
       "explanation": "QoS 2可以避免重复投递同一条MQTT消息，但设备动作是否重复仍需业务幂等和事务设计保障。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "低功耗广域网与消息协议",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 226 题；章节测验-4 第 38 题（重复题，已合并）",
       "order": 163
     },
     {
@@ -5359,9 +5367,9 @@
       ],
       "answer": "对",
       "explanation": "2G完成了从模拟系统到数字系统的重要演进，并支持数字语音和短信等业务。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 227 题；章节测验-4 第 39 题（重复题，已合并）",
       "order": 164
     },
     {
@@ -5388,9 +5396,9 @@
       ],
       "answer": "错",
       "explanation": "频率复用必须进行同频干扰控制，通常需要频率规划、功率控制和小区协调。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 228 题；章节测验-4 第 40 题（重复题，已合并）",
       "order": 165
     },
     {
@@ -5417,9 +5425,9 @@
       ],
       "answer": "对",
       "explanation": "用户密度增加时，小区分裂是提升容量和覆盖质量的常用手段。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 229 题；章节测验-4 第 41 题（重复题，已合并）",
       "order": 166
     },
     {
@@ -5446,9 +5454,9 @@
       ],
       "answer": "错",
       "explanation": "FDMA按频率维度区分用户，TDMA按时间维度区分用户，两者资源维度不同。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 230 题；章节测验-4 第 42 题（重复题，已合并）",
       "order": 167
     },
     {
@@ -5475,9 +5483,9 @@
       ],
       "answer": "对",
       "explanation": "FDD主要用频率分离上下行，TDD主要用时间分离上下行。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 231 题；章节测验-4 第 43 题（重复题，已合并）",
       "order": 168
     },
     {
@@ -5504,9 +5512,9 @@
       ],
       "answer": "对",
       "explanation": "GPRS在2G网络上引入分组交换，支持相对灵活的数据业务。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 232 题；章节测验-4 第 44 题（重复题，已合并）",
       "order": 169
     },
     {
@@ -5533,9 +5541,9 @@
       ],
       "answer": "错",
       "explanation": "增加天线不等于容量必然按天线数线性增长；还要受信道相关性、干扰、导频和终端能力等限制。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 233 题；章节测验-4 第 45 题（重复题，已合并）",
       "order": 170
     },
     {
@@ -5562,9 +5570,9 @@
       ],
       "answer": "对",
       "explanation": "毫米波可提供大量连续带宽，但传播损耗和遮挡敏感，需要密集站点、波束赋形和中继等手段。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 234 题；章节测验-4 第 46 题（重复题，已合并）",
       "order": 171
     },
     {
@@ -5591,9 +5599,9 @@
       ],
       "answer": "对",
       "explanation": "mMTC即海量机器类通信，强调大规模低功耗设备连接。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 235 题；章节测验-4 第 47 题（重复题，已合并）",
       "order": 172
     },
     {
@@ -5620,9 +5628,9 @@
       ],
       "answer": "错",
       "explanation": "5G空口低时延只是网络时延预算的一部分，端到端时延还受承载网、边缘节点、服务器和应用处理影响。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "蜂窝移动通信",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 236 题；章节测验-4 第 48 题（重复题，已合并）",
       "order": 173
     },
     {
@@ -5649,9 +5657,9 @@
       ],
       "answer": "错",
       "explanation": "物联网选型必须综合功耗、覆盖、速率、成本、时延、可靠性和运维，不能只看峰值速率。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 237 题；章节测验-4 第 49 题（重复题，已合并）",
       "order": 174
     },
     {
@@ -5678,9 +5686,9 @@
       ],
       "answer": "对",
       "explanation": "两个方案存在各自优势时，应按业务约束进行多指标加权或场景化比较。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 238 题；章节测验-4 第 50 题（重复题，已合并）",
       "order": 175
     },
     {
@@ -5707,9 +5715,9 @@
       ],
       "answer": "对",
       "explanation": "网关可接入不同协议设备，完成协议适配、数据汇聚和统一回传。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 239 题；章节测验-4 第 51 题（重复题，已合并）",
       "order": 176
     },
     {
@@ -5736,9 +5744,9 @@
       ],
       "answer": "错",
       "explanation": "边缘计算的核心是把部分计算和数据保存在靠近终端的位置，并不要求每条原始数据先上传远端云。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 240 题；章节测验-4 第 52 题（重复题，已合并）",
       "order": 177
     },
     {
@@ -5765,9 +5773,9 @@
       ],
       "answer": "对",
       "explanation": "卫星连接能补充地面网络，但卫星链路预算、终端天线、时延、容量和资费都需要评估。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 241 题；章节测验-4 第 53 题（重复题，已合并）",
       "order": 178
     },
     {
@@ -5794,9 +5802,9 @@
       ],
       "answer": "错",
       "explanation": "链路加密保护传输机密性，不能替代设备身份、访问控制、固件签名和生命周期安全管理。",
-      "reference": "**选项**",
+      "reference": "",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 242 题；章节测验-4 第 54 题（重复题，已合并）",
       "order": 179
     },
     {
@@ -5823,9 +5831,9 @@
       ],
       "answer": "对",
       "explanation": "OTA固件签名验证能确认固件来源和完整性，降低恶意或损坏固件被安装的风险。",
-      "reference": "**选项**\n\n\n\n\n\n\n\n\n\n\n## 三、分析题",
+      "reference": "# 三、简答题",
       "knowledge": "物联网选型与安全",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 243 题；章节测验-4 第 55 题（重复题，已合并）",
       "order": 180
     },
     {
@@ -5838,14 +5846,14 @@
       "sourceQuestionId": "`886511753`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 10,
+      "points": 8,
       "title": "城市地下水表与偏远自营农场均需低速定期上报。城市有运营商覆盖，农场无稳定公网且可自建网关。请比较NB-IoT和LoRaWAN方案。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "城市地下水表优先采用NB-IoT：它利用运营商授权频谱和现成蜂窝覆盖，无需用户自建网关，具有低功耗、广覆盖、连接密度高以及运营商级运维和安全能力，适合有稳定公网、分散且规模化部署的水表。\n\n偏远农场优先采用LoRaWAN：其物理层LoRa可提供远距离低速率通信，工作在免许可ISM频段，可自建网关、网络服务器和应用平台，部署灵活且前期网络成本可控；同时必须依法控制发射功率和信道占用，自行规划网关回传、覆盖和供电，并处理干扰、网络安全及维护问题。\n\n两种技术都适合低速电池业务，最终应综合覆盖条件、建网和通信成本、可靠性、下行时延、终端功耗、管理与合规要求选型；本题城市选NB-IoT、偏远农场选LoRaWAN更合适。",
+      "reference": "城市地下水表优先采用NB-IoT：它利用运营商授权频谱和现成蜂窝覆盖，无需用户自建网关，具有低功耗、广覆盖、连接密度高以及运营商级运维和安全能力，适合有稳定公网、分散且规模化部署的水表。\n偏远农场优先采用LoRaWAN：其物理层LoRa可提供远距离低速率通信，工作在免许可ISM频段，可自建网关、网络服务器和应用平台，部署灵活且前期网络成本可控；同时必须依法控制发射功率和信道占用，自行规划网关回传、覆盖和供电，并处理干扰、网络安全及维护问题。\n两种技术都适合低速电池业务，最终应综合覆盖条件、建网和通信成本、可靠性、下行时延、终端功耗、管理与合规要求选型；本题城市选NB-IoT、偏远农场选LoRaWAN更合适。",
       "knowledge": "方案分析与资源复用",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 270 题；章节测验-4 第 56 题（重复题，已合并）",
       "order": 181
     },
     {
@@ -5858,14 +5866,14 @@
       "sourceQuestionId": "`886511754`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 10,
+      "points": 8,
       "title": "1000个电池环境节点只报趋势数据，另有常供电阀门需要较快下行与远程参数管理。请分析终端类别、消息可靠性和管理方案。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "1000个电池环境节点以趋势数据上报为主，应采用LoRaWAN Class A：终端上行发送后只开启两个短接收窗，其余时间休眠，平均功耗最低，并可通过批量上报和降低发送占空比进一步省电。\n\n趋势数据可用非确认消息或MQTT QoS 0，关键环境告警采用确认消息或QoS 1，并以消息序号、TTL和业务幂等避免重复写入。\n\n常供电阀门需要较快下行，应采用持续开启接收窗的Class C，或者在条件允许时使用具备可靠下行能力的蜂窝连接；控制命令宜采用QoS 1/2，配合设备侧命令ID、去重和状态回执，确保参数变更可审计且重复命令不会产生二次动作。\n\n管理面应设置网关、网络服务器、MQTT代理和设备注册中心，统一完成设备鉴权、主题权限、配置下发、固件OTA、密钥轮换和可观测性，重点监测在线率、丢包率、重传次数、下行时延和电池寿命。",
+      "reference": "1000个电池环境节点以趋势数据上报为主，应采用LoRaWAN Class A：终端上行发送后只开启两个短接收窗，其余时间休眠，平均功耗最低，并可通过批量上报和降低发送占空比进一步省电。\n趋势数据可用非确认消息或MQTT QoS 0，关键环境告警采用确认消息或QoS 1，并以消息序号、TTL和业务幂等避免重复写入。\n常供电阀门需要较快下行，应采用持续开启接收窗的Class C，或者在条件允许时使用具备可靠下行能力的蜂窝连接；控制命令宜采用QoS 1/2，配合设备侧命令ID、去重和状态回执，确保参数变更可审计且重复命令不会产生二次动作。\n管理面应设置网关、网络服务器、MQTT代理和设备注册中心，统一完成设备鉴权、主题权限、配置下发、固件OTA、密钥轮换和可观测性，重点监测在线率、丢包率、重传次数、下行时延和电池寿命。",
       "knowledge": "方案分析与资源复用",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 271 题；章节测验-4 第 57 题（重复题，已合并）",
       "order": 182
     },
     {
@@ -5878,14 +5886,14 @@
       "sourceQuestionId": "`886511776`",
       "type": "analysis",
       "typeLabel": "分析题",
-      "points": 10,
+      "points": 8,
       "title": "某系统不同用户占不同载频，每个用户的上行与下行使用一对不同频率。请分别判断多址和双工方式。若用户共享同频但用不同时隙接入，双向也按时隙交替，结果如何？",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "第一种情况：不同用户占用不同载频，属于频分多址FDMA；每个用户的上行与下行分别使用一对不同频率，属于频分双工FDD。\n\n第二种情况：用户共享同一频率但按不同时间隙接入，属于时分多址TDMA；上下行也按时隙交替，属于时分双工TDD。\n\n判断依据分别是用户间复用资源的维度和上下行传输的分离方式。\n\n\n\n\n## 四、简答题",
+      "reference": "第一种情况：不同用户占用不同载频，属于频分多址FDMA；每个用户的上行与下行分别使用一对不同频率，属于频分双工FDD。\n第二种情况：用户共享同一频率但按不同时间隙接入，属于时分多址TDMA；上下行也按时隙交替，属于时分双工TDD。\n判断依据分别是用户间复用资源的维度和上下行传输的分离方式。\n\n\n\n# 五、论述题",
       "knowledge": "方案分析与资源复用",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 272 题；章节测验-4 第 58 题（重复题，已合并）",
       "order": 183
     },
     {
@@ -5898,14 +5906,14 @@
       "sourceQuestionId": "`886511775`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 7.5,
+      "points": 4,
       "title": "简述1G至5G的主要发展方向。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "1G以模拟调制和模拟语音为主；2G由模拟向数字演进，支持数字语音、短信和低速数据，并引入TDMA/CDMA；3G以CDMA等技术提供移动多媒体和较高速分组数据；4G采用全IP架构、OFDMA和MIMO等，面向移动宽带和高数据速率；5G进一步扩展到大带宽eMBB、超可靠低时延URLLC和海量机器通信mMTC，并强调网络切片、边缘计算和灵活部署。\n\n总体方向是模拟到数字、窄带到宽带、语音到多媒体和数据业务、固定体验到泛在移动，以及速率、时延、连接规模和智能化能力的持续提升。",
+      "reference": "1G以模拟调制和模拟语音为主；2G由模拟向数字演进，支持数字语音、短信和低速数据，并引入TDMA/CDMA；3G以CDMA等技术提供移动多媒体和较高速分组数据；4G采用全IP架构、OFDMA和MIMO等，面向移动宽带和高数据速率；5G进一步扩展到大带宽eMBB、超可靠低时延URLLC和海量机器通信mMTC，并强调网络切片、边缘计算和灵活部署。\n总体方向是模拟到数字、窄带到宽带、语音到多媒体和数据业务、固定体验到泛在移动，以及速率、时延、连接规模和智能化能力的持续提升。",
       "knowledge": "通信技术演进与选型权衡",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 259 题；章节测验-4 第 59 题（重复题，已合并）",
       "order": 184
     },
     {
@@ -5918,15 +5926,2786 @@
       "sourceQuestionId": "`886511792`",
       "type": "short",
       "typeLabel": "简答题",
-      "points": 7.5,
+      "points": 4,
       "title": "说明物联网通信选型的功耗、距离、速率、成本四维权衡。",
       "options": [],
       "answer": "",
       "explanation": "",
-      "reference": "物联网通信选型需要在功耗、距离、速率和成本之间权衡。电池终端通常优先选择低占空比、PSM/eDRX或Class A等节能机制，代价是下行响应时延增大；远距离和强穿透往往需要更低速率、更长扩频因子、更大发射功率或更多中继，且可能降低容量。\n\n高数据速率会占用更多带宽、射频资源和处理能力，通常提高功耗、设备成本和资费；增加网关、站点或天线覆盖可改善距离和可靠性，但增加部署及运维成本。\n\n应按业务的数据量、上报周期、时延、可靠性和寿命目标设置硬约束，再比较覆盖、终端与网络建设、通信资费、运维和扩容的综合生命周期成本，而不是仅按单一峰值指标选型。\n\n\n\n\n## 文档说明\n\n- 题目 ID 来自当前测试页面，可用于建立错题记录和收藏索引。\n- 答案节点使用原生 HTML ``，在支持 HTML 的 Markdown 渲染器中可直接折叠。\n- 若静态站点禁用原始 HTML，可将 `` 和 `<summary>` 转换成站点自己的折叠组件。\n- 判断题统一显示为“对/错”，判断题选项在内部值中对应 `true/false`。",
+      "reference": "物联网通信选型需要在功耗、距离、速率和成本之间权衡。电池终端通常优先选择低占空比、PSM/eDRX或Class A等节能机制，代价是下行响应时延增大；远距离和强穿透往往需要更低速率、更长扩频因子、更大发射功率或更多中继，且可能降低容量。\n高数据速率会占用更多带宽、射频资源和处理能力，通常提高功耗、设备成本和资费；增加网关、站点或天线覆盖可改善距离和可靠性，但增加部署及运维成本。\n应按业务的数据量、上报周期、时延、可靠性和寿命目标设置硬约束，再比较覆盖、终端与网络建设、通信资费、运维和扩容的综合生命周期成本，而不是仅按单一峰值指标选型。\n\n- 题目 ID 来自当前测试页面，可用于建立错题记录和收藏索引。\n- 答案节点使用原生 HTML ``，在支持 HTML 的 Markdown 渲染器中可直接折叠。\n- 若静态站点禁用原始 HTML，可将 `` 和 `<summary>` 转换成站点自己的折叠组件。\n- 判断题统一显示为“对/错”，判断题选项在内部值中对应 `true/false`。\n\n\n# 四、分析题",
       "knowledge": "通信技术演进与选型权衡",
-      "originalSource": "超星学习通｜章节测验-4",
+      "originalSource": "综合测验 第 260 题；章节测验-4 第 60 题（重复题，已合并）",
       "order": 185
+    },
+    {
+      "id": "exam-1",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 1,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "物联网将物品接入网络，主要为了实现什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "消除所有通信协议"
+        },
+        {
+          "key": "B",
+          "text": "智能识别、监测与管理"
+        },
+        {
+          "key": "C",
+          "text": "只播放娱乐视频"
+        },
+        {
+          "key": "D",
+          "text": "只替代计算机硬件"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“智能识别、监测与管理”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 186
+    },
+    {
+      "id": "exam-2",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 2,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "物联网三层架构中，直接采集温度数据的是哪一层？",
+      "options": [
+        {
+          "key": "A",
+          "text": "应用层"
+        },
+        {
+          "key": "B",
+          "text": "业务展示层"
+        },
+        {
+          "key": "C",
+          "text": "感知层"
+        },
+        {
+          "key": "D",
+          "text": "网络层"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“感知层”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 187
+    },
+    {
+      "id": "exam-3",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 3,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "物联网网络层的主要任务是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "测量环境温度"
+        },
+        {
+          "key": "B",
+          "text": "生成传感器电压"
+        },
+        {
+          "key": "C",
+          "text": "显示业务报表"
+        },
+        {
+          "key": "D",
+          "text": "传输感知数据"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“传输感知数据”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 188
+    },
+    {
+      "id": "exam-4",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 4,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "下列哪种技术属于短距离有线连接技术？",
+      "options": [
+        {
+          "key": "A",
+          "text": "卫星通信"
+        },
+        {
+          "key": "B",
+          "text": "USB"
+        },
+        {
+          "key": "C",
+          "text": "LoRa"
+        },
+        {
+          "key": "D",
+          "text": "蓝牙"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“USB”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 189
+    },
+    {
+      "id": "exam-5",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 5,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "偏远地区缺少地面网络时，可考虑哪种回传方式？",
+      "options": [
+        {
+          "key": "A",
+          "text": "仅使用NFC"
+        },
+        {
+          "key": "B",
+          "text": "仅使用串口线"
+        },
+        {
+          "key": "C",
+          "text": "卫星通信"
+        },
+        {
+          "key": "D",
+          "text": "仅使用USB"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“卫星通信”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 190
+    },
+    {
+      "id": "exam-6",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 6,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "IPv6对海量物联网设备连接的主要价值是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "保证所有链路零时延"
+        },
+        {
+          "key": "B",
+          "text": "取消网络路由"
+        },
+        {
+          "key": "C",
+          "text": "自动消除无线干扰"
+        },
+        {
+          "key": "D",
+          "text": "提供更大的地址空间"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“提供更大的地址空间”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 191
+    },
+    {
+      "id": "exam-7",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 7,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "电池供电节点每小时只上报少量数据，优先关注哪项指标？",
+      "options": [
+        {
+          "key": "A",
+          "text": "机械转速"
+        },
+        {
+          "key": "B",
+          "text": "平均能耗与休眠能力"
+        },
+        {
+          "key": "C",
+          "text": "最高视频帧率"
+        },
+        {
+          "key": "D",
+          "text": "屏幕亮度"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“平均能耗与休眠能力”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 192
+    },
+    {
+      "id": "exam-8",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 8,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "下列哪个场景较符合NB-IoT的定位？",
+      "options": [
+        {
+          "key": "A",
+          "text": "显示器视频连接"
+        },
+        {
+          "key": "B",
+          "text": "高速本地文件复制"
+        },
+        {
+          "key": "C",
+          "text": "广域智能水表抄表"
+        },
+        {
+          "key": "D",
+          "text": "无压缩高清视频直播"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“广域智能水表抄表”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 193
+    },
+    {
+      "id": "exam-9",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 9,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "LoRa的典型特点是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "仅能通过光纤传输"
+        },
+        {
+          "key": "B",
+          "text": "以高清视频为主要目标"
+        },
+        {
+          "key": "C",
+          "text": "必须采用USB供电通信"
+        },
+        {
+          "key": "D",
+          "text": "远距离、低功耗通信"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“远距离、低功耗通信”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 194
+    },
+    {
+      "id": "exam-10",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 10,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "通信的基本目的是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "改变物体质量"
+        },
+        {
+          "key": "B",
+          "text": "消除所有随机事件"
+        },
+        {
+          "key": "C",
+          "text": "传递消息中包含的信息"
+        },
+        {
+          "key": "D",
+          "text": "增大设备外形"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“传递消息中包含的信息”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 195
+    },
+    {
+      "id": "exam-11",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 11,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "模拟信号与数字信号的主要区分依据是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "传输距离长短"
+        },
+        {
+          "key": "B",
+          "text": "是否使用电源"
+        },
+        {
+          "key": "C",
+          "text": "设备是否有天线"
+        },
+        {
+          "key": "D",
+          "text": "信号参量取值连续或离散"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“信号参量取值连续或离散”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 196
+    },
+    {
+      "id": "exam-12",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 12,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "某事件的发生概率减小时，其自信息量如何变化？",
+      "options": [
+        {
+          "key": "A",
+          "text": "增大"
+        },
+        {
+          "key": "B",
+          "text": "减小"
+        },
+        {
+          "key": "C",
+          "text": "总为零"
+        },
+        {
+          "key": "D",
+          "text": "与概率完全无关"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“增大”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 197
+    },
+    {
+      "id": "exam-13",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 13,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "概率为1的事件，其自信息量为多少比特？",
+      "options": [
+        {
+          "key": "A",
+          "text": "无穷大"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“0”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 198
+    },
+    {
+      "id": "exam-14",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 14,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "8个符号等概率出现时，每个符号包含多少比特信息？",
+      "options": [
+        {
+          "key": "A",
+          "text": "4"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“3”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 199
+    },
+    {
+      "id": "exam-15",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 15,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "固定符号数的离散信源，何时熵达到最大？",
+      "options": [
+        {
+          "key": "A",
+          "text": "一个符号概率为1"
+        },
+        {
+          "key": "B",
+          "text": "概率越不均匀越大"
+        },
+        {
+          "key": "C",
+          "text": "所有符号概率为0"
+        },
+        {
+          "key": "D",
+          "text": "所有符号等概率"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“所有符号等概率”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 200
+    },
+    {
+      "id": "exam-16",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 16,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "对讲机双方轮流讲话，主要体现哪种通信方式？",
+      "options": [
+        {
+          "key": "A",
+          "text": "波分复用"
+        },
+        {
+          "key": "B",
+          "text": "半双工"
+        },
+        {
+          "key": "C",
+          "text": "单工"
+        },
+        {
+          "key": "D",
+          "text": "全双工"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“半双工”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 201
+    },
+    {
+      "id": "exam-17",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 17,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "连接发送端与接收端的传输路径称为什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "信宿"
+        },
+        {
+          "key": "B",
+          "text": "编码字典"
+        },
+        {
+          "key": "C",
+          "text": "信道"
+        },
+        {
+          "key": "D",
+          "text": "信源"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“信道”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 202
+    },
+    {
+      "id": "exam-18",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 18,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "数字通信中，判决再生主要实现什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "判定符号并重建标准波形"
+        },
+        {
+          "key": "B",
+          "text": "将所有噪声放大"
+        },
+        {
+          "key": "C",
+          "text": "取消收端时钟"
+        },
+        {
+          "key": "D",
+          "text": "保证任何干扰下都无误码"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“判定符号并重建标准波形”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 203
+    },
+    {
+      "id": "exam-19",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 19,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "带宽和线性信噪比已知时，香农容量公式是哪项？",
+      "options": [
+        {
+          "key": "A",
+          "text": "C=N/S"
+        },
+        {
+          "key": "B",
+          "text": "C=B log₂(1+S/N)"
+        },
+        {
+          "key": "C",
+          "text": "C=B(S/N)²"
+        },
+        {
+          "key": "D",
+          "text": "C=B+S+N"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“C=B log₂(1+S/N)”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 204
+    },
+    {
+      "id": "exam-20",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 20,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "傅里叶分析主要将时域信号表示为什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "设备成本的组合"
+        },
+        {
+          "key": "B",
+          "text": "不同温度的组合"
+        },
+        {
+          "key": "C",
+          "text": "电池寿命的组合"
+        },
+        {
+          "key": "D",
+          "text": "不同频率分量的组合"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“不同频率分量的组合”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 205
+    },
+    {
+      "id": "exam-21",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 21,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "排查无线链路的窄带干扰，最直接观察什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "频谱中的异常频率成分"
+        },
+        {
+          "key": "B",
+          "text": "设备外壳颜色"
+        },
+        {
+          "key": "C",
+          "text": "文件扩展名"
+        },
+        {
+          "key": "D",
+          "text": "传感器编号长度"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“频谱中的异常频率成分”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 206
+    },
+    {
+      "id": "exam-22",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 22,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "调制在通信系统中的主要作用是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "取消接收设备"
+        },
+        {
+          "key": "B",
+          "text": "使基带信号适应信道传输"
+        },
+        {
+          "key": "C",
+          "text": "确保信道容量无限"
+        },
+        {
+          "key": "D",
+          "text": "删除所有消息内容"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“使基带信号适应信道传输”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 207
+    },
+    {
+      "id": "exam-23",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 23,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "常规AM采用无失真包络检波时，应避免什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "设置直流载波分量"
+        },
+        {
+          "key": "B",
+          "text": "使用低通滤波"
+        },
+        {
+          "key": "C",
+          "text": "保留上下边带"
+        },
+        {
+          "key": "D",
+          "text": "过调制导致包络失真"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“过调制导致包络失真”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 208
+    },
+    {
+      "id": "exam-24",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 24,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "基带最高频率为5kHz，常规双边带AM带宽为多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "10kHz"
+        },
+        {
+          "key": "B",
+          "text": "5kHz"
+        },
+        {
+          "key": "C",
+          "text": "2.5kHz"
+        },
+        {
+          "key": "D",
+          "text": "20kHz"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“10kHz”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 209
+    },
+    {
+      "id": "exam-25",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 25,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "基带带宽为4kHz，理想SSB占用带宽为多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "16kHz"
+        },
+        {
+          "key": "B",
+          "text": "2kHz"
+        },
+        {
+          "key": "C",
+          "text": "4kHz"
+        },
+        {
+          "key": "D",
+          "text": "8kHz"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“4kHz”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 210
+    },
+    {
+      "id": "exam-26",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 26,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "相干解调需要本地载波满足什么条件？",
+      "options": [
+        {
+          "key": "A",
+          "text": "频率任意且无需同步"
+        },
+        {
+          "key": "B",
+          "text": "幅度始终为零"
+        },
+        {
+          "key": "C",
+          "text": "只具有直流分量"
+        },
+        {
+          "key": "D",
+          "text": "与发送载波同频并保持正确相位关系"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“与发送载波同频并保持正确相位关系”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 211
+    },
+    {
+      "id": "exam-27",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 27,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "FDM主要通过什么区分各路信号？",
+      "options": [
+        {
+          "key": "A",
+          "text": "相同频率且完全重合"
+        },
+        {
+          "key": "B",
+          "text": "传感器型号"
+        },
+        {
+          "key": "C",
+          "text": "不同频带"
+        },
+        {
+          "key": "D",
+          "text": "不同文件名称"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“不同频带”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 212
+    },
+    {
+      "id": "exam-45",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 45,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "信道编码的主要目的是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少信源字典"
+        },
+        {
+          "key": "B",
+          "text": "提高传感器测温精度"
+        },
+        {
+          "key": "C",
+          "text": "提高传输可靠性"
+        },
+        {
+          "key": "D",
+          "text": "尽可能删除所有监督位"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“提高传输可靠性”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 213
+    },
+    {
+      "id": "exam-46",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 46,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "不依赖重传，由接收端利用冗余纠错的方式是哪项？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ARQ"
+        },
+        {
+          "key": "B",
+          "text": "信源压缩"
+        },
+        {
+          "key": "C",
+          "text": "包络检波"
+        },
+        {
+          "key": "D",
+          "text": "FEC"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“FEC”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 214
+    },
+    {
+      "id": "exam-47",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 47,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "检测到错误后向发送端请求重传的方式是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ARQ"
+        },
+        {
+          "key": "B",
+          "text": "仅FEC"
+        },
+        {
+          "key": "C",
+          "text": "仅量化"
+        },
+        {
+          "key": "D",
+          "text": "仅调制"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“ARQ”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 215
+    },
+    {
+      "id": "exam-48",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 48,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "结合纠错编码与重传的方式是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "仅信源编码"
+        },
+        {
+          "key": "B",
+          "text": "HARQ"
+        },
+        {
+          "key": "C",
+          "text": "无冗余编码"
+        },
+        {
+          "key": "D",
+          "text": "模拟放大"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“HARQ”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 216
+    },
+    {
+      "id": "exam-49",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 49,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "最小码距为5的码，保证最多纠正多少位错误？",
+      "options": [
+        {
+          "key": "A",
+          "text": "4"
+        },
+        {
+          "key": "B",
+          "text": "5"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“2”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 217
+    },
+    {
+      "id": "exam-50",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 50,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "(n,k)线性分组码的生成矩阵G一般有多少行、多少列？",
+      "options": [
+        {
+          "key": "A",
+          "text": "k行k列"
+        },
+        {
+          "key": "B",
+          "text": "k行n列"
+        },
+        {
+          "key": "C",
+          "text": "n行k列"
+        },
+        {
+          "key": "D",
+          "text": "n行n列"
+        }
+      ],
+      "answer": "B",
+      "explanation": "本题应选 B，核心是“k行n列”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 218
+    },
+    {
+      "id": "exam-51",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 51,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "线性分组码接收向量R的伴随式是哪项？",
+      "options": [
+        {
+          "key": "A",
+          "text": "S=log₂R"
+        },
+        {
+          "key": "B",
+          "text": "S=H/R"
+        },
+        {
+          "key": "C",
+          "text": "S=HRᵀ"
+        },
+        {
+          "key": "D",
+          "text": "S=R+G的实数和"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“S=HRᵀ”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 219
+    },
+    {
+      "id": "exam-52",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 52,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "(7,4)汉明码有多少个监督位？",
+      "options": [
+        {
+          "key": "A",
+          "text": "4"
+        },
+        {
+          "key": "B",
+          "text": "7"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "本题应选 D，核心是“3”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 220
+    },
+    {
+      "id": "exam-53",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 53,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "计算CRC余数主要采用哪种运算？",
+      "options": [
+        {
+          "key": "A",
+          "text": "模2多项式除法"
+        },
+        {
+          "key": "B",
+          "text": "普通实数除法"
+        },
+        {
+          "key": "C",
+          "text": "十进制取平均"
+        },
+        {
+          "key": "D",
+          "text": "频谱积分"
+        }
+      ],
+      "answer": "A",
+      "explanation": "本题应选 A，核心是“模2多项式除法”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 221
+    },
+    {
+      "id": "exam-61",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 61,
+      "sourceQuestionId": "",
+      "type": "single",
+      "typeLabel": "单选题",
+      "points": 1,
+      "title": "循环前缀通常如何构造？",
+      "options": [
+        {
+          "key": "A",
+          "text": "复制下一帧的标题"
+        },
+        {
+          "key": "B",
+          "text": "只删除符号尾部"
+        },
+        {
+          "key": "C",
+          "text": "复制符号尾部并放到符号头部"
+        },
+        {
+          "key": "D",
+          "text": "用任意业务地址替换符号"
+        }
+      ],
+      "answer": "C",
+      "explanation": "本题应选 C，核心是“复制符号尾部并放到符号头部”。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 222
+    },
+    {
+      "id": "exam-123",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 123,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "感知层、网络层、应用层需要协同完成物联网业务。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 223
+    },
+    {
+      "id": "exam-124",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 124,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "物联网通信只支持人与人之间的信息交互。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 224
+    },
+    {
+      "id": "exam-125",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 125,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "卫星网可以作为物联网网络层的一种承载网络。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 225
+    },
+    {
+      "id": "exam-126",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 126,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "提高节点能效只需增加发射功率。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 226
+    },
+    {
+      "id": "exam-127",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 127,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "NB-IoT适合低速率、广覆盖的物联网业务。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 227
+    },
+    {
+      "id": "exam-128",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 128,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "LoRa适合所有高速视频传输业务。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 228
+    },
+    {
+      "id": "exam-129",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 129,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "消息、信息和信号在通信系统中含义完全相同。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 229
+    },
+    {
+      "id": "exam-130",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 130,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "以2为底的对数计算自信息量时，单位为比特。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 230
+    },
+    {
+      "id": "exam-131",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 131,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "四进制等概符号每个只包含1比特信息。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 231
+    },
+    {
+      "id": "exam-132",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 132,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "信源熵是每个符号自信息量的统计平均。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 232
+    },
+    {
+      "id": "exam-133",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 133,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "全双工允许双方同时发送和接收消息。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 233
+    },
+    {
+      "id": "exam-134",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 134,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "串行通信的传输速率一定低于任何并行通信。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 234
+    },
+    {
+      "id": "exam-135",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 135,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "调制解调可以帮助信号适应传输信道。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 235
+    },
+    {
+      "id": "exam-136",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 136,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "数字判决再生能够保证在任意噪声条件下都不产生错误。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 236
+    },
+    {
+      "id": "exam-137",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 137,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "20dB的功率信噪比对应线性比值100。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 237
+    },
+    {
+      "id": "exam-138",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 138,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "计算香农容量时，可以将10dB直接当作S/N=10dB代入对数。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 238
+    },
+    {
+      "id": "exam-139",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 139,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "同一信号可以分别从时域和频域进行分析。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 239
+    },
+    {
+      "id": "exam-140",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 140,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "方波仅包含一个正弦频率分量。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 240
+    },
+    {
+      "id": "exam-141",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 141,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "理想白噪声的功率谱密度不随频率变化。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 241
+    },
+    {
+      "id": "exam-142",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 142,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "常规AM频谱包含载波和上下两个边带。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 242
+    },
+    {
+      "id": "exam-143",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 143,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "相同基带带宽下，SSB带宽约为双边带调幅的一半。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 243
+    },
+    {
+      "id": "exam-144",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 144,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "DSB-SC无需任何载波同步就能用普通包络检波可靠恢复所有基带信号。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 244
+    },
+    {
+      "id": "exam-145",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 145,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "理想FM通过载波幅度随消息变化来传递信息。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 245
+    },
+    {
+      "id": "exam-146",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 146,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "PM的相位随时变化时，瞬时频率仍必然完全恒定。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 246
+    },
+    {
+      "id": "exam-147",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 147,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "FDM可以让多路信号同时通过同一物理信道。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 247
+    },
+    {
+      "id": "exam-148",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 148,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "开放频段意味着任意设备都可无限功率发射且不必考虑干扰。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 248
+    },
+    {
+      "id": "exam-158",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 158,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "数字基带传输必须先将信号调制到高频载波。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 249
+    },
+    {
+      "id": "exam-164",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 164,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "16QAM每个符号映射4个二进制比特。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 250
+    },
+    {
+      "id": "exam-169",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 169,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "监督位与信息位应满足已知的编码约束。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 251
+    },
+    {
+      "id": "exam-170",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 170,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "ARQ无需反馈通道即可完成重传请求。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 252
+    },
+    {
+      "id": "exam-171",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 171,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "HARQ的增量冗余可以在重传时发送额外冗余。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 253
+    },
+    {
+      "id": "exam-172",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 172,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "两个码字逐位异或后，1的个数等于汉明距离。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 254
+    },
+    {
+      "id": "exam-173",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 173,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "最小码距为3的码保证可以纠正任意两位错误。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 255
+    },
+    {
+      "id": "exam-174",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 174,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "伴随式为0一定能证明接收码字没有经历传输错误。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 256
+    },
+    {
+      "id": "exam-175",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 175,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "二元线性分组码的生成矩阵与校验矩阵满足GHᵀ=0。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 257
+    },
+    {
+      "id": "exam-176",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 176,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "任何CRC生成多项式都保证检测任意数量的错误。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 258
+    },
+    {
+      "id": "exam-177",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 177,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "卷积码的当前输出可能与之前的输入有关。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "对",
+      "explanation": "原命题表述正确。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 259
+    },
+    {
+      "id": "exam-178",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 178,
+      "sourceQuestionId": "",
+      "type": "judge",
+      "typeLabel": "判断题",
+      "points": 1,
+      "title": "交织器自身就能保证纠正所有突发错误。",
+      "options": [
+        {
+          "key": "对",
+          "text": "正确"
+        },
+        {
+          "key": "错",
+          "text": "错误"
+        }
+      ],
+      "answer": "错",
+      "explanation": "原命题表述错误。",
+      "reference": "",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 260
+    },
+    {
+      "id": "exam-244",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 244,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "简述物联网三层架构及各层的作用。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "物联网三层架构由感知层、网络层和应用层组成，并可由边缘计算协同。感知层通过传感器、RFID、摄像头、执行器等采集物理世界数据或实施控制，是数据入口；网络层负责接入认证、地址编址、路由转发、协议适配，并通过蜂窝网、LoRaWAN、WiFi、卫星等方式把数据可靠传到平台；应用层负责存储、分析、可视化、告警、业务决策和行业服务。边缘计算可在网关侧完成过滤、融合、低时延控制，云平台承担全局管理和规模分析。三层协同实现从物理量感知、可靠传输到业务价值的闭环。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 261
+    },
+    {
+      "id": "exam-245",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 245,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "简述NB-IoT与LoRa适合承担的共同业务特征。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "NB-IoT与LoRa都适合小数据包、低速率、长覆盖、低功耗、海量连接和时延要求不苛刻的物联网业务，尤其适合电池供电、安装分散、上行多于下行、终端移动性低且需要多年寿命的场景，例如水表、气表、环境监测和状态采集。二者通常不适合高清视频或持续大带宽业务；具体选型还要比较授权频谱与免许可频谱、运营商覆盖与自建网关、下行时延、可靠性、合规、终端和网络生命周期成本。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 262
+    },
+    {
+      "id": "exam-246",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 246,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "解释消息、信息与信号，并用温度监测举例。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "消息是承载内容的具体形式，如数字、文字或数据帧；信息是消息对接收者不确定性的消除，是消息中真正有用的语义；信号是信息在物理介质上的电、光或电磁表现形式。例如温度传感器测得25摄氏度，数字“25”及状态字段构成消息，接收者据此判断温度是否正常或预测过热风险，这部分判断价值属于信息；传感器输出电压、总线电平或射频调制波形则是承载它的信号。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 263
+    },
+    {
+      "id": "exam-247",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 247,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "简述数字判决再生与模拟放大的区别。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "模拟放大按比例放大输入，噪声和失真也会被一起放大，多级转发会逐步累积误差。数字通信在每级采用判决再生：先判断接收符号，再按标准电平或波形重新产生信号，从而截断噪声累积，并通过同步、均衡和信道编码提高可靠性。但判决再生并非绝对无误，在低信噪比、严重干扰、码间串扰、同步失锁或深衰落时仍可能误判；区别在于它能主动重建干净波形，而不是简单连续放大。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 264
+    },
+    {
+      "id": "exam-248",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 248,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "简述常规AM的原理与频谱特点。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "常规AM用基带消息改变高频载波的幅度，通常把载波与“直流偏置加消息”相乘，使包络随消息变化。其频谱由载波分量和上下两个边带组成，双边带调幅所占带宽为基带最高频率的两倍。接收端在载波分量足够、无过调制时可使用包络检波，电路较简单；但载波消耗功率、抗噪声能力不如相干系统，过调制会造成包络失真。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 265
+    },
+    {
+      "id": "exam-249",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 249,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "说明FM与PM分别用什么参数承载信息及二者联系。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "FM让载波的瞬时频率随消息变化，消息幅度决定频偏；PM让载波相位随消息变化。二者都属于角度调制，载波幅度理论上保持不变。相位与瞬时频率互为导数关系：瞬时频率是瞬时相位的变化率，因此PM中相位随消息改变时频率也会变化；若对消息积分后再调相，可得到FM。FM带宽通常由最大频偏和消息带宽共同决定，可用卡森规则估算。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 266
+    },
+    {
+      "id": "exam-254",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 254,
+      "sourceQuestionId": "",
+      "type": "short",
+      "typeLabel": "简答题",
+      "points": 4,
+      "title": "说明汉明距离、最小码距及其检纠错关系。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "汉明距离是两个等长码字逐位比较时不同位的个数；最小码距dmin是所有不同码字之间汉明距离的最小值，是衡量码集检错纠错能力的关键指标。一般情况下最多可检测dmin-1位错误，最多可纠正floor((dmin-1)/2)位错误；若同时检错和纠错并用，可检测e位并纠正t位差错需满足dmin≥e+t+1且e≥t。最小码距越大，通常冗余越多、可靠性越高。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 267
+    },
+    {
+      "id": "exam-261",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 261,
+      "sourceQuestionId": "",
+      "type": "analysis",
+      "typeLabel": "分析题",
+      "points": 8,
+      "title": "某小区部署3000个电池水表，每日上报两次，部分位于地下室，已有运营商物联网覆盖。请分析架构、通信选型和节能措施。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "终端侧部署电池水表、计量采集单元和NB-IoT通信模组，地下室点位先做覆盖勘测，弱覆盖处通过提高覆盖等级、调整天线/位置、增加室内分布或中继补强。网络采用运营商NB-IoT基站和核心网接入云端物联网平台，平台完成设备鉴权、数据入库、欠费/漏报检测、固件OTA和密钥管理。每日两次上报可批量打包，仅上传增量与状态摘要，平时启用PSM或eDRX并延长寻呼周期，减少心跳和确认，关键告警才立即上报；同时设置本地缓存、时间戳、消息序号、幂等入库和断点补传。验收关注覆盖率、上报成功率、端到端时延、重复率、电池寿命和运维成本。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 268
+    },
+    {
+      "id": "exam-262",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 262,
+      "sourceQuestionId": "",
+      "type": "analysis",
+      "typeLabel": "分析题",
+      "points": 8,
+      "title": "农场各地块传感器分散，数据量小，地块内缺少公网覆盖，但管理中心可联网。请设计从节点到云平台的通信方案。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "地块节点采用LoRaWAN Class A电池终端，传感器经LoRa无线链路上报到管理中心或各地块自建的LoRa网关；Class A仅在发送后短暂开两个接收窗，适合低占空比上报和省电。网关通过农场管理中心的以太网、光纤或蜂窝回传送至LoRaWAN网络服务器，再由MQTT或HTTPS接入云平台，完成设备注册、鉴权、数据解密、去重、存储和告警。地块较大时按覆盖和遮挡规划多网关、圆极化天线及冗余回传，设置合理扩频因子和ADR，控制发射功率、占空比与信道，避免自干扰并遵守当地ISM频段规定；关键告警使用确认上行，趋势数据可批量上传。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 269
+    },
+    {
+      "id": "exam-263",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 263,
+      "sourceQuestionId": "",
+      "type": "analysis",
+      "typeLabel": "分析题",
+      "points": 8,
+      "title": "智能工厂同时采集低速温度数据、高清视频和实时控制指令。为什么不宜只按最高速率选择一种通信技术？请提出设计思路。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "三类业务对带宽、时延、抖动、可靠性、功耗和成本要求差异很大：温度采集是小包、低速率、可容忍一定时延；高清视频需要持续大带宽和较高上下行能力；实时控制则强调低时延、确定性、可靠性和隔离。只按最高速率选型会让所有终端承担不必要的高功耗、高成本，也难以满足控制业务的确定性。应采用分层异构方案：视频走WiFi 6、工业以太网或5G eMBB；温度传感器采用低功耗短距网络并在网关汇聚；控制指令采用工业以太网、TSN或5G URLLC并设置专用切片与本地边缘控制。通过异构网关、边缘计算、VLAN/切片和网络安全域隔离，分别满足各业务的QoS，并以可用性、时延、抖动、丢包率和总成本综合验收。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 270
+    },
+    {
+      "id": "exam-264",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 264,
+      "sourceQuestionId": "",
+      "type": "analysis",
+      "typeLabel": "分析题",
+      "points": 8,
+      "title": "某信源符号概率为1/2、1/4、1/8、1/8。求各符号自信息量、平均信息量，并与四符号等概信源比较。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "自信息量I(x)=-log2P(x)。四个符号分别为1、2、3、3比特；平均信息量即信源熵H=1/2×1+1/4×2+1/8×3+1/8×3=1.75比特/符号。若四符号等概率，则每个符号概率为1/4，自信息量均为2比特，平均信息量H=2比特/符号。因此该非均匀信源每符号比等概信源少0.25比特的平均不确定性，可按概率为高概率符号分配较短码字。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 271
+    },
+    {
+      "id": "exam-266",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 266,
+      "sourceQuestionId": "",
+      "type": "analysis",
+      "typeLabel": "分析题",
+      "points": 8,
+      "title": "某系统要保证纠正任意2位错误，候选码最小码距分别为3、4、5。请选择满足要求的码，并分别给出三者独立检错能力。",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "要纠正任意2位错误，需满足dmin≥2t+1=5，因此应选择最小码距为5的码。若只独立考虑检错能力，最多可检测dmin-1位错误，所以码距3、4、5分别可保证检测最多2、3、4位错误；它们可保证纠正的错误位数分别为1、1、2位。实际系统还要结合突发错误、译码复杂度、码率和残余误码率选择。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 272
+    },
+    {
+      "id": "exam-273",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 273,
+      "sourceQuestionId": "",
+      "type": "discussion",
+      "typeLabel": "论述题",
+      "points": 0,
+      "title": "电力5G RedCap应用场景分析",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "【背景】中国联通携手国网山东省电力公司、华为、国网南瑞，在济南莱芜完成了全国首个省域电力5G RedCap商用部署。该项目依照电力行业“安全分区、网络专用、横向隔离、纵向认证”的原则，将RedCap与5G硬切片技术融合：端侧采用低成本RedCap模组接入配电、光伏、无人机等各类终端；网络侧全域开通RB资源预留1%的硬切片，传输网使用FlexE硬隔离，核心网生产控制大区专用UPF下沉，打造了国内规模最大的5G硬切片专网。测试证明，在1%硬切片场景下RedCap终端可满足电力业务需求。电力业务对通信的要求是：平均时延小于100ms，通信可靠性要求大于99.999%；而此前电力终端面临成本高、基于公网不满足安全隔离要求的痛点。山东电力计划2024年上线30万5G终端，并以莱芜为样板点向全省规模复制。项目方总结：“使用硬切片和RedCap结合的解决方案实现5G+电力应用综合成本最优化”。\n\n题目1：电力系统包含周期上报的电表和状态传感器、需要及时响应的设备控制指令，以及巡检视频回传。请将这三类业务分别对应到5G的典型应用场景，并说明网络选型时还应考虑哪些需求。\n\n\n\n周期上报的电表和状态传感器属于mMTC，其特点是终端数量大、单次数据小、总体速率低，可容忍一定时延，重点是覆盖、连接密度、终端成本和功耗。需要及时响应的设备控制指令属于URLLC，重点是低时延、低抖动、高可靠和安全隔离；巡检视频回传属于eMBB，需要连续的上行带宽和容量。网络选型除三类场景的速率与时延外，还应考虑上下行业务占比、可靠性和可用性、终端功耗与成本、覆盖深度、移动性、数据隔离与安全、切片SLA、边缘UPF时延、故障冗余、计费及全网运维。不能只按峰值速率选型，应用RedCap、硬切片和下沉UPF按业务分流并分别验证指标。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 273
+    },
+    {
+      "id": "exam-274",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 274,
+      "sourceQuestionId": "",
+      "type": "discussion",
+      "typeLabel": "论述题",
+      "points": 0,
+      "title": "电力控制业务端到端可靠性分析",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "【背景】中国联通携手国网山东省电力公司、华为、国网南瑞，在济南莱芜完成了全国首个省域电力5G RedCap商用部署。该项目依照电力行业“安全分区、网络专用、横向隔离、纵向认证”的原则，将RedCap与5G硬切片技术融合：端侧采用低成本RedCap模组接入配电、光伏、无人机等各类终端；网络侧全域开通RB资源预留1%的硬切片，传输网使用FlexE硬隔离，核心网生产控制大区专用UPF下沉，打造了国内规模最大的5G硬切片专网。测试证明，在1%硬切片场景下RedCap终端可满足电力业务需求。电力业务对通信的要求是：平均时延小于100ms，通信可靠性要求大于99.999%；而此前电力终端面临成本高、基于公网不满足安全隔离要求的痛点。山东电力计划2024年上线30万5G终端，并以莱芜为样板点向全省规模复制。项目方总结：“使用硬切片和RedCap结合的解决方案实现5G+电力应用综合成本最优化”。\n\n题目2：某电力控制业务要求通信可靠性达到99.999%。请从终端、无线接入、传输链路和平台接入几个环节，分析影响端到端通信的因素，并提出相应保障措施。\n\n\n\n端到端可靠性应从各段串联分析。终端侧关注模组与芯片质量、天线和馈线、供电稳定、固件健壮性及本地缓存，采用冗余电源、心跳、看门狗、确认重传和幂等处理；无线接入侧关注覆盖余量、干扰、切换和拥塞，采用专用RB资源预留、合理MCS与HARQ、双频/多站覆盖、优先级调度及必要的专网隔离；传输侧采用FlexE硬隔离、环网和冗余路径、链路检测与快速倒换，避免共享流量争抢；平台侧将生产控制UPF下沉，核心网与UPF冗余部署，设备双向证书认证、消息确认、去重和审计，应用侧保存命令ID与状态回执。99.999%应按业务端到端SLA测量，按五个九折算年不可用时间约5.26分钟，并要覆盖单点故障、极端拥塞和灾备演练，安全关键控制还应配置本地失效安全。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 274
+    },
+    {
+      "id": "exam-275",
+      "sourceCode": "exam",
+      "sourceLabel": "综合测验",
+      "sourceShortLabel": "综合",
+      "course": "物联网通信技术",
+      "sourceQuestionNumber": 275,
+      "sourceQuestionId": "",
+      "type": "discussion",
+      "typeLabel": "论述题",
+      "points": 0,
+      "title": "城乡电力终端的自建网络与5G网络选型",
+      "options": [],
+      "answer": "",
+      "explanation": "",
+      "reference": "【背景】中国联通携手国网山东省电力公司、华为、国网南瑞，在济南莱芜完成了全国首个省域电力5G RedCap商用部署。该项目依照电力行业“安全分区、网络专用、横向隔离、纵向认证”的原则，将RedCap与5G硬切片技术融合：端侧采用低成本RedCap模组接入配电、光伏、无人机等各类终端；网络侧全域开通RB资源预留1%的硬切片，传输网使用FlexE硬隔离，核心网生产控制大区专用UPF下沉，打造了国内规模最大的5G硬切片专网。测试证明，在1%硬切片场景下RedCap终端可满足电力业务需求。电力业务对通信的要求是：平均时延小于100ms，通信可靠性要求大于99.999%；而此前电力终端面临成本高、基于公网不满足安全隔离要求的痛点。山东电力计划2024年上线30万5G终端，并以莱芜为样板点向全省规模复制。项目方总结：“使用硬切片和RedCap结合的解决方案实现5G+电力应用综合成本最优化”。\n\n题目3：某电力企业需要在省内多个城乡区域接入监测终端。请从建设和运维成本、覆盖范围、业务控制及技术演进四方面，比较自建无线网络与使用运营商5G网络的取舍，并说明选型前应完成的工作。\n\n\n\n建设与运维成本方面，自建无线网络前期设备、站址、频谱合规和集成投入大，且需长期维护；运营商5G可按覆盖租用或虚拟专网建设，前期CAPEX较低但需考虑切片、专网和流量资费，以及长期OPEX。覆盖方面，运营商5G在城乡广域覆盖和快速复制上占优，自建更适合局部、边界明确或特殊工业现场。业务控制方面，自建对资源、路由和安全边界掌控更强；5G通过硬切片、专用UPF、边缘计算和SLA也能提供隔离，但须明确KPI、优先权和故障责任。技术演进方面，5G/RedCap和3GPP生态覆盖面广、演进快，但存在运营商依赖；自建灵活但可能面临专用制式和升级投资风险。选型前应完成业务清单与流量模型、覆盖与干扰勘测、时延可靠性安全需求、TCO与长期资费、合规与安全评审、供应商和SLA比较，并先做小规模试点与迁移/互操作方案，用实测达成率而非宣传峰值决策。",
+      "knowledge": "",
+      "originalSource": "",
+      "order": 275
     }
   ]
 }

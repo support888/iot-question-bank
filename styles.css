@@ -958,6 +958,11 @@ svg {
   background: var(--orange-soft);
 }
 
+.type-discussion {
+  color: #7250a3;
+  background: #f0eafa;
+}
+
 .bookmark-button {
   display: grid;
   width: 31px;

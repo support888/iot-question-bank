@@ -6,7 +6,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectDir = path.resolve(scriptDir, "..");
 const dataPath = path.join(projectDir, "data", "questions.json");
 
-const sources = [
+const chapterSources = [
   {
     code: "c2",
     label: "章节测验 2",
@@ -33,11 +33,23 @@ const sources = [
   },
 ];
 
+const mergedSource = {
+  code: "exam",
+  label: "综合测验",
+  shortLabel: "综合",
+  course: "物联网通信技术",
+  file: path.join(projectDir, "sources", "merged-275.md"),
+  expectedQuestions: 275,
+};
+
+const sources = [...chapterSources, mergedSource];
+
 const typeMap = {
   单选题: "single",
   判断题: "judge",
   简答题: "short",
   分析题: "analysis",
+  论述题: "discussion",
 };
 
 const sectionTypeMap = {
@@ -45,10 +57,19 @@ const sectionTypeMap = {
   "二、判断题": "judge",
   "三、简答题": "short",
   "四、分析题": "analysis",
+  "五、论述题": "discussion",
 };
 
 function clean(value = "") {
   return value.replace(/\uFEFF/g, "").replace(/\r/g, "").trim();
+}
+
+function normalizeTitle(value = "") {
+  return clean(value)
+    .normalize("NFKC")
+    .toLocaleLowerCase("zh-CN")
+    .replaceAll("π", "pi")
+    .replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
 function parseSource(source, raw) {
@@ -77,16 +98,18 @@ function parseSource(source, raw) {
       answer = match?.[1] || "";
     }
 
-    if (!answer && !["short", "analysis"].includes(type)) {
+    if (!answer && !["short", "analysis", "discussion"].includes(type)) {
       throw new Error(`${source.code} 第 ${current.number} 题缺少答案`);
     }
 
     const reference = clean(
       current.referenceText
         .replace(/<details>|<\/details>|<summary>.*?<\/summary>/g, "")
+        .replace(/^\*\*(?:题型|分值|题目 ID|知识点|知识标签|来源|合并来源)：\*\*.*$/gm, "")
         .replace(/^\*\*参考答案：\*\*\s*$/gm, "")
         .replace(/^\*\*答案：.*?\*\*\s*$/gm, "")
         .replace(/^\*\*解析：\*\*.*$/gm, "")
+        .replace(/^##(?!#)\s+.*$/gm, "")
         .replace(/^---\s*$/gm, ""),
     );
 
@@ -115,6 +138,7 @@ function parseSource(source, raw) {
         judge: "判断题",
         short: "简答题",
         analysis: "分析题",
+        discussion: "论述题",
       }[type],
       points: Number.parseFloat(current.points?.match(/[\d.]+/)?.[0] || "0"),
       title: clean(current.title),
@@ -173,6 +197,21 @@ function parseSource(source, raw) {
       continue;
     }
 
+    const inlineMetaMatch = line.match(
+      /^\*\*题型：\*\*\s*(.+?)(?:\s+\*\*分值：\*\*\s*(.*))?$/,
+    );
+    if (inlineMetaMatch) {
+      current.typeLabel = inlineMetaMatch[1].trim();
+      if (inlineMetaMatch[2]) current.points = inlineMetaMatch[2].trim();
+      continue;
+    }
+
+    const provenanceMatch = line.match(/^\*\*合并来源：\*\*\s*(.*)$/);
+    if (provenanceMatch) {
+      current.originalSource = provenanceMatch[1].trim();
+      continue;
+    }
+
     const optionMatch =
       line.match(/^-?\s+\*\*([A-D])\.\*\*\s+(.+)$/) ||
       line.match(/^([A-D])\.\s+(.+)$/);
@@ -182,7 +221,7 @@ function parseSource(source, raw) {
     }
 
     const answerMatch =
-      line.match(/^\*\*答案：\s*(.+?)\*\*\s*$/) ||
+      line.match(/^\*\*(?:正确)?答案：\s*(.+?)(?:\*\*)?\s*$/) ||
       line.match(/^答案：\s*(.+?)\s*$/);
     if (answerMatch) {
       current.answer = answerMatch[1].trim();
@@ -196,7 +235,7 @@ function parseSource(source, raw) {
     }
 
     const type = typeMap[current.typeLabel] || currentSectionType;
-    if (["short", "analysis"].includes(type)) {
+    if (["short", "analysis", "discussion"].includes(type)) {
       current.referenceText += `${line}\n`;
     } else {
       current.referenceText += `${line}\n`;
@@ -214,11 +253,63 @@ function parseSource(source, raw) {
   return questions;
 }
 
-const allQuestions = [];
+const chapterQuestions = [];
 
-for (const source of sources) {
+for (const source of chapterSources) {
   const raw = await readFile(source.file, "utf8");
-  allQuestions.push(...parseSource(source, raw));
+  chapterQuestions.push(...parseSource(source, raw));
+}
+
+const mergedRaw = await readFile(mergedSource.file, "utf8");
+const mergedQuestions = parseSource(mergedSource, mergedRaw);
+
+const chapterByTitle = new Map();
+for (const question of chapterQuestions) {
+  const key = normalizeTitle(question.title);
+  if (chapterByTitle.has(key)) {
+    throw new Error(`章节题库存在重复题：${question.title}`);
+  }
+  chapterByTitle.set(key, question);
+}
+
+const matchedChapterIds = new Set();
+const allQuestions = mergedQuestions.map((question) => {
+  const legacyQuestion = chapterByTitle.get(normalizeTitle(question.title));
+  if (!legacyQuestion) {
+    return {
+      ...question,
+      id: `exam-${question.sourceQuestionNumber}`,
+    };
+  }
+
+  if (matchedChapterIds.has(legacyQuestion.id)) {
+    throw new Error(`同一章节题被多次覆盖：${legacyQuestion.id}`);
+  }
+  matchedChapterIds.add(legacyQuestion.id);
+
+  return {
+    ...question,
+    id: legacyQuestion.id,
+    sourceCode: legacyQuestion.sourceCode,
+    sourceLabel: legacyQuestion.sourceLabel,
+    sourceShortLabel: legacyQuestion.sourceShortLabel,
+    course: legacyQuestion.course,
+    sourceQuestionNumber: legacyQuestion.sourceQuestionNumber,
+    sourceQuestionId: legacyQuestion.sourceQuestionId,
+    knowledge: question.knowledge || legacyQuestion.knowledge,
+    originalSource: question.originalSource || legacyQuestion.originalSource,
+  };
+});
+
+if (matchedChapterIds.size !== chapterQuestions.length) {
+  const missing = chapterQuestions
+    .filter((question) => !matchedChapterIds.has(question.id))
+    .map((question) => `${question.id} ${question.title}`);
+  throw new Error(`以下章节题未在新题库中找到对应项：\n${missing.join("\n")}`);
+}
+
+if (allQuestions.length !== 275) {
+  throw new Error(`合并后应为 275 题，实际得到 ${allQuestions.length} 题`);
 }
 
 const ids = new Set();
@@ -235,12 +326,15 @@ for (const question of allQuestions) {
       throw new Error(`${question.id} 的答案 ${question.answer} 不在选项中`);
     }
   }
-  if (["short", "analysis"].includes(question.type) && !question.reference) {
+  if (
+    ["short", "analysis", "discussion"].includes(question.type) &&
+    !question.reference
+  ) {
     throw new Error(`${question.id} 缺少参考答案`);
   }
 }
 
-const typeOrder = ["single", "judge", "short", "analysis"];
+const typeOrder = ["single", "judge", "short", "analysis", "discussion"];
 allQuestions.sort((a, b) => {
   const sourceOrder =
     sources.findIndex((source) => source.code === a.sourceCode) -
@@ -260,18 +354,20 @@ const counts = Object.fromEntries(
   ]),
 );
 
+const sourceSummaries = sources.map(({ file, expectedQuestions, ...source }) => ({
+  ...source,
+  questionCount: allQuestions.filter((question) => question.sourceCode === source.code).length,
+}));
+
 const payload = {
   meta: {
     title: "物联网题库",
-    description: "物联网通信技术章节测验 2、3、4 合并复习题库",
+    description: "物联网通信技术章节测验 2、3、4 与综合测验合并去重题库",
     generatedAt: new Date().toISOString(),
     questionCount: allQuestions.length,
-    sourceCount: sources.length,
+    sourceCount: sourceSummaries.length,
     typeCounts: counts,
-    sources: sources.map(({ file, expectedQuestions, ...source }) => ({
-      ...source,
-      questionCount: expectedQuestions,
-    })),
+    sources: sourceSummaries,
   },
   questions: allQuestions,
 };
@@ -281,10 +377,10 @@ await writeFile(dataPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 
 console.log(
   `已生成 ${allQuestions.length} 道题：` +
-    sources
-      .map((source) => `${source.label} ${source.expectedQuestions} 题`)
+    sourceSummaries
+      .map((source) => `${source.label} ${source.questionCount} 题`)
       .join("，"),
 );
 console.log(
-  `题型统计：单选 ${counts.single}，判断 ${counts.judge}，简答 ${counts.short}，分析 ${counts.analysis}`,
+  `题型统计：单选 ${counts.single}，判断 ${counts.judge}，简答 ${counts.short}，分析 ${counts.analysis}，论述 ${counts.discussion}`,
 );
