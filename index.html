@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="物联网通信技术章节测验 2、3、4 合并复习题库，共 185 题，支持筛选、搜索、随机练习、错题与收藏。"
+    />
+    <meta name="theme-color" content="#0c3b32" />
+    <title>物联网题库 · 三合一复习站</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#question-list">跳到题目列表</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="回到顶部">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" role="img">
+              <path d="M10 25.5c0-6 4.7-10.8 10.5-10.8S31 19.5 31 25.5" />
+              <path d="M5.5 29.5c0-9 6.5-16 15-16s15 7 15 16" />
+              <circle cx="20.5" cy="28.5" r="2.5" />
+            </svg>
+          </span>
+          <span>
+            <strong>物联网题库</strong>
+            <small>三合一复习站</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="主导航">
+          <button class="nav-item is-active" type="button" data-view="bank">
+            全部题目
+          </button>
+          <button class="nav-item" type="button" data-view="wrong">
+            错题本 <span class="nav-count" id="wrong-nav-count">0</span>
+          </button>
+          <button class="nav-item" type="button" data-view="bookmarks">
+            收藏 <span class="nav-count" id="bookmark-nav-count">0</span>
+          </button>
+        </nav>
+
+        <button class="icon-button theme-button" id="theme-button" type="button" aria-label="切换深色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="pulse-dot"></span>
+              IOT COMMUNICATION · EXAM LAB
+            </p>
+            <h1>把每一道题，<br />练成确定性。</h1>
+            <p class="hero-lead">
+              三套章节测验统一整理，支持即时判分、错题回看与随机练习。
+              没有干扰，打开就能刷。
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button" type="button" id="start-practice">
+                继续练习
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+              <button class="secondary-button" type="button" id="random-practice">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path>
+                </svg>
+                随机 10 题
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-stats" aria-label="题库统计">
+            <article class="stat-card stat-card-main">
+              <span class="stat-index">01</span>
+              <strong id="stat-total">185</strong>
+              <span>道精选题目</span>
+              <div class="mini-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </article>
+            <article class="stat-card">
+              <span class="stat-index">02</span>
+              <strong id="stat-types">4</strong>
+              <span>种考试题型</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-index">03</span>
+              <strong>本地</strong>
+              <span>进度自动保存</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="filter-panel" aria-label="题库筛选">
+          <div class="panel-heading">
+            <div>
+              <span class="section-kicker">FILTER</span>
+              <h2>精准筛选</h2>
+            </div>
+            <button class="text-button" type="button" id="reset-filters">重置</button>
+          </div>
+
+          <label class="search-box" for="search-input">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="搜索题干、答案、知识点…"
+              autocomplete="off"
+            />
+            <kbd>⌘ K</kbd>
+          </label>
+
+          <div class="filter-group">
+            <div class="filter-label">
+              <span>题库来源</span>
+              <span id="source-filter-count">3</span>
+            </div>
+            <div class="chip-list" id="source-filters"></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">
+              <span>题型</span>
+            </div>
+            <div class="chip-list" id="type-filters"></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">
+              <span>复习状态</span>
+            </div>
+            <div class="chip-list" id="status-filters">
+              <button class="filter-chip is-active" type="button" data-status="all">全部</button>
+              <button class="filter-chip" type="button" data-status="unanswered">未作答</button>
+              <button class="filter-chip" type="button" data-status="wrong">需复习</button>
+              <button class="filter-chip" type="button" data-status="correct">已掌握</button>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-ring" id="progress-ring">
+              <div>
+                <strong id="progress-percent">0%</strong>
+                <span>总进度</span>
+              </div>
+            </div>
+            <div class="progress-copy">
+              <strong>学习进度</strong>
+              <p><span id="answered-count">0</span> / <span id="total-count">185</span> 题已作答</p>
+              <div class="progress-legend">
+                <span><i class="legend-correct"></i><b id="correct-count">0</b> 掌握</span>
+                <span><i class="legend-wrong"></i><b id="wrong-count">0</b> 待复习</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-icon">i</span>
+            <p>选择客观题选项后会立即显示结果，学习记录只保存在当前浏览器。</p>
+          </div>
+        </aside>
+
+        <section class="question-area" aria-labelledby="question-area-title">
+          <div class="question-toolbar">
+            <div class="toolbar-copy">
+              <div class="toolbar-title-row">
+                <h2 id="question-area-title">全部题目</h2>
+                <span class="view-chip" id="active-view-label">题库</span>
+              </div>
+              <p>共 <strong id="result-count">0</strong> 道题符合当前条件</p>
+            </div>
+            <div class="toolbar-actions">
+              <button class="compact-button" type="button" id="expand-all">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"></path>
+                </svg>
+                展开答案
+              </button>
+              <button class="compact-button" type="button" id="random-filtered">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path>
+                </svg>
+                随机抽题
+              </button>
+            </div>
+          </div>
+
+          <div class="random-banner" id="random-banner" hidden>
+            <span>随机练习进行中</span>
+            <button type="button" id="exit-random">退出随机模式</button>
+          </div>
+
+          <div class="question-list" id="question-list" aria-live="polite"></div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <div class="empty-illustration" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M15 20h34v29H15z"></path>
+                <path d="M21 14h22v10H21zM23 31h18M23 38h12"></path>
+              </svg>
+            </div>
+            <h3>这里暂时没有题目</h3>
+            <p>换一个筛选条件，或清空搜索关键词再试试。</p>
+            <button class="primary-button small" type="button" id="clear-empty-filters">
+              查看全部题目
+            </button>
+          </div>
+
+          <nav class="pagination" id="pagination" aria-label="分页"></nav>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>物联网题库</strong>
+        <span>章节测验 2 · 3 · 4</span>
+      </div>
+      <p>题库内容整理自所提供的三份文档，仅用于课程复习。</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <noscript>
+      <div class="noscript">此答题网站需要启用 JavaScript 才能加载题库。</div>
+    </noscript>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

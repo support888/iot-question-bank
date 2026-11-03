@@ -1,0 +1,7 @@
+# Local QA artifacts
+preview-*.png
+qa.cjs
+
+# OS files
+.DS_Store
+Thumbs.db
